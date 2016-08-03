@@ -9,23 +9,16 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<section class="row-1">
-
-	</section><!-- .row-1 -->
+<article id="post-<?php the_ID(); ?>" <?php post_class("living-here"); ?>>
+	<div class="row-1">
+		<header>
+			<h1><?php the_title();?></h1>
+		</header>
+		<section class="copy">
+			<?php echo get_field("row_1_description");?>
+		</section><!--.copy-->
+	</div><!-- .row-1 -->
 	<section class="row-2">
-	
+		<!--insert neighborhood tiles here-->
 	</section><!-- .row-2 -->
-	<section class="row-3">
-
-	</section><!-- .row-3 -->
-	<section class="row-4">
-
-	</section><!-- .row-4 -->
-	<section class="row-5">
-
-	</section><!-- .row-5 -->
-	<section class="row-6">
-
-	</section><!-- .row-6 -->
 </article><!-- #post-## -->

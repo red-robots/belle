@@ -12,8 +12,10 @@
  * @package ACStarter
  */
 
-get_header(); ?>
-
+get_header();
+$post = get_post(51);
+setup_postdata($post);
+?>
 	<div id="primary" class="content-area">
 		<?php get_sidebar();?>
 		<div class="main-footer wrapper">
@@ -23,5 +25,4 @@ get_header(); ?>
 			<?php get_footer("page");?>
 		</div><!--.main-footer-wrapper-->
 	</div><!-- #primary -->
-
 <?php get_footer();
