@@ -36,7 +36,7 @@ function js_custom_init()
     'supports' => array('title','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('testimonial',$args); // name used in query
+  register_post_type('testimonials',$args); // name used in query
   
   $labels = array(
 	'name' => _x('Relators', 'post type general name'),
@@ -67,7 +67,7 @@ function js_custom_init()
     'supports' => array('title','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('relator',$args); // name used in query
+  register_post_type('relators',$args); // name used in query
   
   // Add more between here
   
