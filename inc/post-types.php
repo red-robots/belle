@@ -8,18 +8,18 @@ function js_custom_init()
 	// Register the Homepage Slides
   
      $labels = array(
-	'name' => _x('Slides', 'post type general name'),
-    'singular_name' => _x('Slide', 'post type singular name'),
-    'add_new' => _x('Add New', 'Slide'),
-    'add_new_item' => __('Add New Slide'),
-    'edit_item' => __('Edit Slides'),
-    'new_item' => __('New Slide'),
-    'view_item' => __('View Slides'),
-    'search_items' => __('Search Slides'),
-    'not_found' =>  __('No Slides found'),
-    'not_found_in_trash' => __('No Slides found in Trash'), 
+	'name' => _x('Testimonials', 'post type general name'),
+    'singular_name' => _x('Testimonial', 'post type singular name'),
+    'add_new' => _x('Add New', 'Testimonial'),
+    'add_new_item' => __('Add New Testimonial'),
+    'edit_item' => __('Edit Testimonials'),
+    'new_item' => __('New Testimonial'),
+    'view_item' => __('View Testimonials'),
+    'search_items' => __('Search Testimonials'),
+    'not_found' =>  __('No Testimonials found'),
+    'not_found_in_trash' => __('No Testimonials found in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Slides'
+    'menu_name' => 'Testimonials'
   );
   $args = array(
 	'labels' => $labels,
@@ -36,7 +36,38 @@ function js_custom_init()
     'supports' => array('title','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('slides',$args); // name used in query
+  register_post_type('testimonials',$args); // name used in query
+  
+  $labels = array(
+	'name' => _x('Relators', 'post type general name'),
+    'singular_name' => _x('Relator', 'post type singular name'),
+    'add_new' => _x('Add New', 'Relator'),
+    'add_new_item' => __('Add New Relator'),
+    'edit_item' => __('Edit Relators'),
+    'new_item' => __('New Relator'),
+    'view_item' => __('View Relators'),
+    'search_items' => __('Search Relators'),
+    'not_found' =>  __('No Relators found'),
+    'not_found_in_trash' => __('No Relators found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Relators'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
+	
+  ); 
+  register_post_type('relators',$args); // name used in query
   
   // Add more between here
   

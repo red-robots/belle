@@ -125,8 +125,16 @@ function change_post_object_label() {
         $labels->not_found = 'No News found';
         $labels->not_found_in_trash = 'No News found in Trash';
     }
+function remove_post_from_admin(){
+	global $menu;
+	foreach($menu as $key => $item){
+		if(strcmp($item[0],"News")===0)
+			unset($menu[$key]);
+	}
+}
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
+add_action( 'admin_menu', 'remove_post_from_admin' );
 
 /*-------------------------------------
   Add a last and first menu class option
