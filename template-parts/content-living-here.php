@@ -22,4 +22,10 @@
 	<section class="row-4">
 
 	</section><!-- .row-4 -->
+	<section class="row-5">
+
+	</section><!-- .row-5 -->
+	<section class="row-6">
+
+	</section><!-- .row-6 -->
 </article><!-- #post-## -->

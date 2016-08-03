@@ -8,6 +8,6 @@
  */
 ?>
 
-<aside id="sidebar" role="complementary">
+<aside id="sidebar" class="left-column" role="complementary">
 	
 </aside><!-- #secondary -->
