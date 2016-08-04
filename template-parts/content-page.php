@@ -19,9 +19,11 @@
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
 	<section class="row-2">
-		<figure>
-			<img src="<?php wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php get_post(get_field("row_1_photo"))->post_title;?>">
-		</figure>
+		<?php if(get_field("row_2_photo")):?>
+			<figure>
+				<img src="<?php wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php get_post(get_field("row_1_photo"))->post_title;?>">
+			</figure>
+		<?php endif;?>
 		<!--insert testimonial here-->
 	</section><!-- .row-2 -->
 	<section class="row-3">

@@ -88,5 +88,24 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	new WOW().init();
+	
+		/*
+	 * Maintain porportion for boxes size 4x2.8
+	 */
+	$(window).on('ready resize',function(){
+		$('[class*="size"]').each(function(){
+			console.log("class");
+			var $this = $(this);
+			$this.attr("class").split(" ").forEach(function(item){
+				var matches = item.match(/(size-)(\d)x(\d)/i);
+				console.log("item");
+				if(matches.length===4){
+					$this.css({
+						"height": Number($this.width())*matches[3]/matches[2]+"px"
+					});
+				}
+			});
+		});
+	});
 
 });// END #####################################    END

@@ -11,24 +11,24 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row-1">
-		<figure>
-			<img src="<?php wp_get_attachment_image_src(get_field("row_1_photo"),"full")[0];?>" alt="<?php get_post(get_field("row_1_photo"))->post_title;?>">
-		</figure>
+		<?php if(get_field("row_1_photo")):?>
+			<img class="size-1x1" src="<?php echo wp_get_attachment_image_src(get_field("row_1_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_1_photo"))->post_title;?>">
+		<?php endif;?>
 		<header>
-			<h1><?php the_title();?></h1>
+			<h1><?php echo get_field("row_1_title");?></h1>
 		</header>
-		<section class="copy">
-			<?php echo get_field("row_1_description");?>
-		</section><!--.copy-->
+			<section class="copy">
+				<?php echo get_field("row_1_description");?>
+			</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<section class="row-2">
-		<figure>
-			<img src="<?php wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php get_post(get_field("row_2_photo"))->post_title;?>">
-		</figure>
+	<div class="row-2">
+		<?php if(get_field("row_2_photo")):?>
+			<img class="size-1x1" src="<?php echo wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_2_photo"))->post_title;?>">
+		<?php endif;?>
 		<section class="copy">
 			<?php echo get_field("row_2_description");?>
 		</section><!--.copy-->
-	</section><!-- .row-2 -->
+	</div><!-- .row-2 -->
 	<section class="row-3">
 
 	</section><!-- .row-3 -->
