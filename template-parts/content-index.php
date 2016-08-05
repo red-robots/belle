@@ -26,7 +26,13 @@
 			<img src="<?php echo wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_2_photo"))->post_title;?>">
 		<?php endif;?>
 		<section class="copy">
+			<header>
+				<h2><?php echo get_bloginfo("name");?></h2>
+			</header>
 			<?php echo get_field("row_2_description");?>
+			<div class="link full-article">
+				<?php echo get_field("row_2_link");?>	
+			</div>
 		</section><!--.copy-->
 	</div><!-- .row-2 -->
 	<section class="row-3">

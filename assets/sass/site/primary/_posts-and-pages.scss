@@ -49,6 +49,62 @@ article {
 				margin: $size__margin-medium-small 0 0 0;
 			}
 		}
+		.row-2 {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: $color__belle-light-grey;
+			@media screen and (min-width: $deskwidth){
+				flex-wrap: nowrap;
+			}		
+			img {
+				width: 100%;
+				flex: 0 0 auto;
+				order: 1;
+				@media screen and (min-width: $deskwidth){
+					width: $size__index-row-2-image;	
+				}
+			}
+			.copy {
+				line-height: 1.2;
+				width: 100%;
+				flex: 0 1 auto;
+				order: 2;
+				padding: $size__margin-medium-medium-large $size__margin-small;
+				@media screen and (min-width: $mobilelandscapewidth){
+					padding: $size__margin-medium-medium-large 6%;
+				}
+				@media screen and (min-width: $deskwidth){
+					padding: 7% 6%;
+					width: 100%-$size__index-row-2-image;
+				}
+				header {
+					margin: 0 0 $size__margin-medium 0;
+					@media screen and (min-width: $mobilelandscapewidth){
+						margin: 0 0 $size__margin-medium 0;
+					}
+					h2 {
+						font-size: $font__size-large;
+						margin: 0;
+						color: $color__belle-dark-blue;
+					}
+				}
+				p {
+					font-size: $font__size-medium-medium-large;
+				}
+				.link.full-article {	
+					font-size: $font__size-medium-small;
+					color: $color__belle-dark-blue;
+					text-transform: uppercase;
+					margin: $size__margin-medium 0 0 0;
+					@media screen and (min-width: $mobilelandscapewidth){
+						margin: $size__margin-medium 0 0 0;
+					}
+				}
+			}
+		}
 	}
 	/*
 	 * Living here template specific
