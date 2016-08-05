@@ -5,7 +5,50 @@ article {
 	 * Page Template specific
 	 */
 	&.page {
-		
+		.featured-image {
+			width: 100%;
+			display: block;
+		}
+		.row-1 {
+			color: white;
+			background-color: $color__belle-orange;
+			padding: $size__margin-medium-medium-large $size__margin-small;
+			margin: 0;
+			@media screen and (min-width: $mobilelandscapewidth){
+				padding: $size__margin-medium-medium-large 6%;
+			}
+			header {
+				line-height: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				flex-wrap: nowrap;
+				margin: 0 0 $size__margin-medium-small 0;
+				h1 {
+					margin: 0;
+					padding: 0;
+					flex: 0 1 auto;
+					font-size: $font__size-extra-extra-large;
+				}
+				&:after {
+					margin: 0;
+					padding: 0;
+					content: "";
+					display: block;
+					height: 2px;
+					background-color: white;
+					flex: 1 1 auto;
+					@media screen and (min-width: $mobilelandscapewidth){
+						margin: $size__margin-small 0 0 $size__margin-medium;
+					}
+				}
+			}
+			.copy {
+				font-size: $font__size-medium-large;
+				margin: $size__margin-medium-small 0 0 0;
+			}
+		}
 	}
 	/*
 	 * Living here template specific

@@ -10,20 +10,20 @@
 ?>
 
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php if(get_field("row_1_photo")):?>
+		<img class="featured-image" src="<?php echo wp_get_attachment_image_src(get_field("row_1_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_1_photo"))->post_title;?>">
+	<?php endif;?>
 	<div class="row-1">
-		<?php if(get_field("row_1_photo")):?>
-			<img class="size-1x1" src="<?php echo wp_get_attachment_image_src(get_field("row_1_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_1_photo"))->post_title;?>">
-		<?php endif;?>
 		<header>
 			<h1><?php echo get_field("row_1_title");?></h1>
 		</header>
-			<section class="copy">
-				<?php echo get_field("row_1_description");?>
-			</section><!--.copy-->
+		<section class="copy">
+			<?php echo get_field("row_1_description");?>
+		</section><!--.copy-->
 	</div><!-- .row-1 -->
 	<div class="row-2">
 		<?php if(get_field("row_2_photo")):?>
-			<img class="size-1x1" src="<?php echo wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_2_photo"))->post_title;?>">
+			<img src="<?php echo wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_2_photo"))->post_title;?>">
 		<?php endif;?>
 		<section class="copy">
 			<?php echo get_field("row_2_description");?>
