@@ -38,13 +38,27 @@
 	<section class="row-3">
 
 	</section><!-- .row-3 -->
-	<section class="row-4">
-
-	</section><!-- .row-4 -->
+	<div class="row-4">
+		<section class="facebook-feed">
+			<?php echo do_shortcode("[custom-facebook-feed]");?>
+		</section><!--.facebook-feed-->
+		<section class="testimonial">
+			<?php $args = array('post_type'=>'testimonial','order'=>'ASC','orderby'=>'rand','posts_per_page'=>1);
+			$query = new WP_Query($args);
+			if($query->have_posts()):
+				$query->the_post();?>
+				<blockquote>
+					<?php echo get_the_content();?>
+				</blockquote>
+			<?php endif;?>
+		</section><!--.testimonial-->
+	</div><!-- .row-4 -->
 	<section class="row-5">
-
+		<div class="hastag">
+			
+		</div><!--.hastag-->
+		<div class="instagram-feed">
+			<?php echo do_shortcode("[instagram-feed]");?>
+		</div><!--.instagram-feed-->
 	</section><!-- .row-5 -->
-	<section class="row-6">
-
-	</section><!-- .row-6 -->
 </article><!-- #post-## -->
