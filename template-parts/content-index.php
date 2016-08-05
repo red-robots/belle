@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row-1">
 		<?php if(get_field("row_1_photo")):?>
 			<img class="size-1x1" src="<?php echo wp_get_attachment_image_src(get_field("row_1_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_1_photo"))->post_title;?>">

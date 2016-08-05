@@ -1,57 +1,83 @@
-#main-sidebar.clear-bottom {
+#main-sidebar {
 	.logo {
-		width: 10%;
-		float: left;
+		width: 20%;
 		display: block;
+		flex: 0 0 auto;
+		margin: $size__margin-tiny $size__margin-medium;
 		@media screen and (min-width: $mobilelandscapewidth){
-			width: 40%;
+			width: 38%;
 			float: none;
-			margin: $size__margin-medium-large auto;
+			margin: $size__margin-medium-medium-large auto $size__margin-medium-large auto;
+		}
+	}
+	.mobile.bars {
+		flex: 0 0 auto;
+		font-size: $font__size-bars;
+		margin: $size__margin-tiny $size__margin-medium;
+		@media screen and (min-width: $mobilelandscapewidth){
+			display: none;
 		}
 	}
 	nav.primary {
 		display: none;
 		@media screen and (min-width: $mobilelandscapewidth){
-			display: block;
-		}
-		ul {
-			margin: 0;
-			padding: 0;
-			li {
-				margin: $size__margin-medium-small 0;
-				list-style-type: none;
+			display: block;	
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					margin: $size__margin-medium-small 0;
+					list-style-type: none;
+				}
 			}
+		}
+	}
+	.separator {
+		display:none;
+		@media screen and (min-width: $mobilelandscapewidth){
+			display: block;
+			background-color: $color__belle-light-blue;
+			height: 2px;
+			width: 70px;
+			margin: $size__margin-medium-small auto;
+			padding: 0;
 		}
 	}
 	.info {
 		display: none;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
-		}
-		> * {
-			margin: $size__margin-medium-small 0;
+			> * {
+				margin: $size__margin-medium-small 0;
+			}
+			.email {
+				span {
+					display: inline-block;
+				}
+			}
 		}
 	}
 	.social {
 		display: none;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
-		}
-		ul {
-			margin: 0;
-			padding: 0;
-			li {
-				margin: $size__margin-medium-small 0;
-				list-style-type: none;
-				display: inline-block;
-				margin: 0 0 0 $size__margin-small;
-				&:first-child {
-					margin: 0;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					margin: $size__margin-medium-small 0;
+					list-style-type: none;
+					display: inline-block;
+					margin: 0 0 0 $size__margin-small;
+					font-size: $font__size-social;
+					&:first-child {
+						margin: 0;
+					}
 				}
 			}
 		}
 	}
-	.mobile {
+	.mobile.menu {
 		display: block;
 		position: fixed;
 		right: -100%;

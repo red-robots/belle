@@ -4,6 +4,7 @@ a {
 }
 body {
 	font-size: $font__size-medium;
+	color: $color__belle-dark-grey;
 }
 .clear {clear: both;}
 .clear-bottom {
@@ -24,7 +25,15 @@ body {
 		padding: 0;
 		text-align: left;
 		font-size: $font__size-medium-large;
+		line-height: 1.2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		font-family: 'Arapey', serif;
 		@media screen and (min-width: $mobilelandscapewidth){
+			display: block;
 			width: $size__main-sidebar;
 			height: 100%;
 			position: fixed;

@@ -89,8 +89,8 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 	
-		/*
-	 * Maintain porportion for boxes size 4x2.8
+	/*
+	 * Maintain porportion for boxes labed size-d1xd2
 	 */
 	$(window).on('ready resize',function(){
 		$('[class*="size"]').each(function(){
