@@ -36,7 +36,17 @@
 		</section><!--.copy-->
 	</div><!-- .row-2 -->
 	<section class="row-3">
-
+        <?php if(get_field("row_3_title")):?>
+            <header>
+                <h2><?php echo get_field("row_3_title");?></h2>
+                <?php if(get_field("row_3_link")):?>
+                    <span><?php echo get_field("row_3_link");?></span>
+                <?php endif;?>
+            </header>
+        <?php endif;?>
+        <div class="davis-farrell">
+			<?php echo do_shortcode('[idx mylistings="1"]');?>
+        </div><!--davis-farrell-->
 	</section><!-- .row-3 -->
 	<div class="row-4">
 		<section class="facebook-feed">
