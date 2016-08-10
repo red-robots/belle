@@ -21,4 +21,5 @@
 	<section class="row-2">
 		<!--insert neighborhood tiles here-->
 	</section><!-- .row-2 -->
+	<?php get_footer("page");?>
 </article><!-- #post-## -->

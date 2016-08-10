@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="page-<?php the_ID(); ?>" <?php post_class("page"); ?>>
+<article id="page-<?php the_ID(); ?>" <?php post_class("page-template"); ?>>
 	<div class="row-1">
 		<header>
 			<h1><?php the_title();?></h1>
@@ -39,4 +39,5 @@
 			<?php echo get_field("row_4_description");?>	
 		</div>
 	</section><!-- .row-4 -->
+	<?php get_footer("page");?>
 </article><!-- #post-## -->

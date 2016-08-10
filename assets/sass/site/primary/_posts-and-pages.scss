@@ -12,7 +12,7 @@ article {
 		.row-1 {
 			color: white;
 			background-color: $color__belle-orange;
-			padding: $size__margin-medium-medium-large $size__margin-small;
+			padding: $size__margin-medium-medium-large $size__margin-medium-medium-large;
 			margin: 0;
 			@media screen and (min-width: $mobilelandscapewidth){
 				padding: $size__margin-medium-medium-large 6%;
@@ -72,7 +72,7 @@ article {
 				width: 100%;
                 display: block;
                 flex: 0 1 auto;
-				padding: 0 $size__margin-small;
+				padding: 0 $size__margin-medium-medium-large;
 				@media screen and (min-width: $mobilelandscapewidth){
 					padding: 0 6%;
 				}
@@ -113,7 +113,7 @@ article {
 			}
 		}
 		.row-3 {
-            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large 0 $size__margin-medium-medium-large;
+            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
             background-color: $color__belle-medium-grey;
             @media screen and (min-width: $mobilelandscapewidth){
 				padding: 7% 6%;
@@ -247,8 +247,12 @@ article {
                 padding: $size__margin-medium 6% 7% 6%;
 			}
             ul {
-                margin: 0 0 0 auto;
-                display: table;
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
                 padding: 0;
                 text-align: right;
                 &:after {
@@ -258,7 +262,6 @@ article {
                 }
                 li {
                     display: block;
-                    float: left;
                     margin: 0 0 0 $size__margin-small;
                     padding: 0 0 0 $size__margin-small;
                     list-style-type: none;
@@ -284,6 +287,93 @@ article {
 	 * Our Team template specific
 	 */
 	&.our-team {
-		
+        .relator {
+            header {
+                background-color: $color__belle-light-grey;
+                border-top: 2px solid $color__belle-light-blue;
+                border-bottom: 2px solid $color__belle-light-blue;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                color: $color__belle-dark-blue;
+                padding: $size__margin-medium $size__margin-medium-medium-large;
+                @media screen and (min-width: $mobilelandscapewidth){
+                   padding: $size__margin-medium 6%;
+                }
+                h2 {
+                    margin: 0;
+                }
+                .info {
+                    text-transform: uppercase;
+                    font-size: $font__size-medium-small;
+                    font-weight: 500;
+                    span {
+                        border-left: 1px solid $color__belle-dark-blue;
+                        padding: 0 0 0 $size__margin-small;
+                        margin: 0 0 0 $size__margin-small;
+                        &:first-child {
+                            border: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .photo-copy.wrapper {
+                background-color: $color__belle-medium-grey;
+                img {
+                    margin: 0 $size__margin-medium-medium-large $size__margin-medium-medium-large 0;
+                    float: left;
+                    width: 30%;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        margin: 0 4% 4% 0;
+                    }
+                }
+                .copy {
+                    padding: $size__margin-medium-medium-large;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        padding: 6%;
+                    }
+                }
+            }
+        }
+        footer {
+            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: $size__margin-medium-medium-large 6% $size__margin-medium-medium-large 6%;
+			}
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    display: block;
+                    margin: 0 0 0 $size__margin-small;
+                    padding: 0 0 0 $size__margin-small;
+                    list-style-type: none;
+                    line-height: 1;
+                    border-left: solid 1px $color__belle-dark-grey;
+                    font-size: $font__size-small;
+                    &:first-child {
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
 	}
 }

@@ -10,7 +10,7 @@
 
 <aside id="main-sidebar" class="left-column" role="complementary">
 	<?php if(get_field("logo","option")):?>
-		<img class="logo" src="<?php echo wp_get_attachment_image_src(get_field("logo","option"),"full")[0];?>" alt="<?php echo get_bloginfo("name");?> logo">
+		<a href="<?php echo get_bloginfo("url");?>"><img class="logo" src="<?php echo wp_get_attachment_image_src(get_field("logo","option"),"full")[0];?>" alt="<?php echo get_bloginfo("name");?> logo"></a>
 	<?php endif;?>
 	<div class="mobile bars">
 		<i class="fa fa-bars"></i>

@@ -18,5 +18,35 @@
 			<?php echo get_field("row_1_description");?>
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<!--insert loop for sections containing articles for relators here-->
+	<?php $args = array('post_type'=>'relator','order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>-1);
+	$query = new WP_Query($args);
+	if($query->have_posts()):
+		while($query->have_posts()):$query->the_post();?>
+            <section class="relator">
+                <header>
+                    <h2><?php the_title();?></h2>
+                    <div class="info">
+                        <?php if(get_field("email")):?>
+                            <span class="email">
+                                <?php echo get_field("email");?>
+                            </span>
+                        <?php endif;?>
+                        <?php if(get_field("phone_number")):?>
+                            <span class="phone-number">
+                                <?php echo get_field("phone_number");?>
+                            </span>
+                        <?php endif;?>
+                    </div>
+                </header>
+                <div class="photo-copy wrapper clear-bottom">
+                    <img src="<?php echo wp_get_attachment_image_src(get_field("photo"),"full")[0];?>" alt="<?php echo get_post(get_field("photo"))->post_title;?>">
+                    <div class="copy">
+                        <?php if(get_field("description"))echo get_field("description");?>
+                    </div><!--.copy-->
+                </div><!--.photo-copy .wrapper-->
+            </section><!--.relator-->
+        <?php endwhile;?>
+    <?php wp_reset_postdata();
+    endif;?>
+    <?php get_footer("page");?>
 </article><!-- #post-## -->
