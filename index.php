@@ -22,7 +22,6 @@ setup_postdata($post);
 			<main id="main" class="site-main" role="main">
 				<?php get_template_part("/template-parts/content","index");?>
 			</main><!-- #main -->
-			<?php get_footer("page");?>
 		</div><!--.main-footer-wrapper-->
 	</div><!-- #primary -->
 <?php get_footer();
