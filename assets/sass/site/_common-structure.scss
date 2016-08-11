@@ -40,6 +40,14 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Arapey', serif;
 	font-weight: normal;
     margin: $size__margin-medium 0;
+	&:first-child {
+		padding-top:0;
+		margin-top: 0;
+	}
+	&:last-child {
+		padding-bottom:0;
+		margin-bottom: 0;
+	}
 }
 #primary {
 	#main-sidebar {
@@ -73,7 +81,7 @@ h1,h2,h3,h4,h5,h6 {
 			width: 100%-$size__main-sidebar;
 			margin: 0 0 0 auto;
         }
-        .our-team, .page-template, .the-belle-difference {
+        .our-team, .page-template, .the-belle-difference, .property-search, .sitemap {
             .row-1 {
                 padding: $size__margin-medium-medium-large;
                 background-color: $color__belle-light-grey;

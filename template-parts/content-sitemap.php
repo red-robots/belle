@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content for the property search.
+ * Template part for displaying page content for the sitemap.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="page-<?php the_ID(); ?>" <?php post_class("property-search"); ?>>
+<article id="page-<?php the_ID(); ?>" <?php post_class("sitemap"); ?>>
 	<div class="row-1">
 		<header>
 			<h1><?php the_title();?></h1>
@@ -18,9 +18,9 @@
 			<?php echo get_field("row_1_description");?>
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<div class="row-2">
-        <?php the_widget('idx', 'IDX : mylistings');?>
-	</div>
+	<section class="row-2">
+        <nav class="sitemap"><?php wp_nav_menu( array( 'theme_location'=>'sitemap' ) ); ?></nav>
+	</section>
 	<section class="row-3">
 		<div class="copy">
 			<?php echo get_field("row_3_description");?>	
