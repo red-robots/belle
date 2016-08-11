@@ -281,7 +281,98 @@ article {
 	 * Living here template specific
 	 */
 	&.living-here {
-		
+        .row-2 {
+            padding: 0 $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 0 5% 0 6%;
+            }
+            header {
+                h2 {
+                    margin: 0 0 $size__margin-medium 0;
+                    color: $color__belle-dark-blue;
+					font-size: $font__size-large;
+                }
+            }
+            .neighborhood-group {
+                width: 100%;
+                margin: 0 0 $size__margin-medium-small 0;
+                @media screen and (min-width: $mobileportraitwidth){
+                    width: (100%-($size__living-here-margin*2))/2;
+                    margin: 0 $size__living-here-margin $size__living-here-margin 0;
+                    min-width: 180px;
+                }
+                @media screen and (min-width: $midwidth){
+                    width: (100%-($size__living-here-margin*$size__living-here-span))/$size__living-here-span;
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }   
+                .copy.description {
+                    width: 100%;
+                    text-align: center;
+                    border-top: 2px solid $color__belle-light-blue;
+                    border-bottom: 2px solid $color__belle-light-blue;
+                    background-color: $color__belle-medium-grey;
+                    padding: $size__margin-medium $size__margin-medium-medium-large;
+                }
+                .neighborhoods.copy {
+                    width: 100%;
+                    text-align: center;
+                    background-color: $color__belle-medium-grey;
+                    color: $color__belle-dark-blue;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: $size__margin-medium-large 0;
+                    p {
+                        margin: 0;
+                        padding: 0 0 $size__margin-small 0;
+                        &:last-child {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            padding: $size__margin-medium-small $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: $size__margin-medium-small 6% $size__margin-medium-medium-large 6%;
+			}
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    display: block;
+                    margin: 0 0 0 $size__margin-small;
+                    padding: 0 0 0 $size__margin-small;
+                    list-style-type: none;
+                    line-height: 1;
+                    border-left: solid 1px $color__belle-dark-grey;
+                    font-size: $font__size-small;
+                    &:first-child {
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
 	}
 	/*
 	 * The Belle Difference template specific

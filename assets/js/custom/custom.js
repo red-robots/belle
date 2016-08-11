@@ -45,12 +45,10 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	var $container = $('#container').imagesLoaded( function() {
   	$container.isotope({
-    // options
-	 itemSelector: '.item',
-		  masonry: {
-			gutter: 15
-			}
- 		 });
+        // options
+        itemSelector: '.item',
+        percentPosition: true,
+        });
 	});
 
 	/*

@@ -18,8 +18,31 @@
 			<?php echo get_field("row_1_description");?>
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<section class="row-2">
-		<!--insert neighborhood tiles here-->
-	</section><!-- .row-2 -->
+	<div class="row-2">
+        <header><h2><?php if(get_field("row_2_title"))echo get_field("row_2_title");?></h2></header>
+		<?php if(have_rows("groups")):?>
+            <div id="container">
+                <?php while(have_rows("groups")): the_row();?>
+                    <section class="neighborhood-group item">
+                        <?php if(get_sub_field("featured_image")):?>
+                            <img src="<?php echo wp_get_attachment_image_src(get_sub_field("featured_image"),"full")[0];?>" alt="<?php echo get_post(get_sub_field("featured_image"))->post_title;?>">
+                        <?php endif;?>
+                        <?php if(get_sub_field("group_description")):?>
+                            <div class="copy description">
+                                <?php echo get_sub_field("group_description");?>
+                            </div><!--.copy-->
+                        <?php endif;?>
+                        <div class="neighborhoods copy">
+                            <?php if(get_sub_field("neighborhoods")):?>
+                                <?php foreach(get_sub_field("neighborhoods") as $row):?>
+                                    <p><?php echo $row['name'];?></p>
+                                <?php endforeach;?>
+                            <?php endif;?>
+                        </div><!--.neighborhoods-->
+                    </section>
+                <?php endwhile;?>
+            </div><!--#container-->
+		<?php endif;?>
+	</div><!-- .row-2 -->
 	<?php get_footer("page");?>
 </article><!-- #post-## -->

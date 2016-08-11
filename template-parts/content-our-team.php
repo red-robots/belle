@@ -39,7 +39,9 @@
                     </div>
                 </header>
                 <div class="photo-copy wrapper clear-bottom">
-                    <img src="<?php echo wp_get_attachment_image_src(get_field("photo"),"full")[0];?>" alt="<?php echo get_post(get_field("photo"))->post_title;?>">
+                    <?php if(get_field("photo")):?>
+                        <img src="<?php echo wp_get_attachment_image_src(get_field("photo"),"full")[0];?>" alt="<?php echo get_post(get_field("photo"))->post_title;?>">
+                    <?php endif;?>
                     <div class="copy">
                         <?php if(get_field("description"))echo get_field("description");?>
                     </div><!--.copy-->

@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6 {
 			width: 100%-$size__main-sidebar;
 			margin: 0 0 0 auto;
         }
-        .our-team, .page-template, .living-here, .the-belle-difference {
+        .our-team, .page-template, .the-belle-difference {
             .row-1 {
                 padding: $size__margin-medium-medium-large;
                 background-color: $color__belle-light-grey;
@@ -85,6 +85,25 @@ h1,h2,h3,h4,h5,h6 {
                 .copy {
                 }
             }
+        }
+        .living-here {
+            .row-1 {
+                padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium $size__margin-medium-medium-large;
+                background-color: $color__belle-light-grey;
+                @media screen and (min-width: $mobilelandscapewidth){
+                    padding: 7% 6% $size__margin-medium 6%;
+                }
+                header {
+                    h1 {
+                        margin: 0 0 $size__margin-medium 0;
+                        font-size: $font__size-extra-large;
+                        color: $color__belle-orange;
+                    }
+                }
+                .copy {
+                }
+            }
+            
         }
 	}
 }
