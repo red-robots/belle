@@ -18,9 +18,11 @@
 			<?php echo get_field("row_1_description");?>
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<section class="row-2">
+	<div class="row-2">
+	</div>
+	<section class="row-3">
 		<div class="copy">
-			<?php echo get_field("row_2_description");?>	
+			<?php echo get_field("row_3_description");?>	
 		</div>
 	</section><!-- .row-3 -->
 	<?php get_footer("page");?>
