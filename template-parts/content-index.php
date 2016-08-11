@@ -21,7 +21,7 @@
 			<?php echo get_field("row_1_description");?>
 		</section><!--.copy-->
 	</div><!-- .row-1 -->
-	<div class="row-2 clear-bottom">
+	<div class="row-2">
 		<?php if(get_field("row_2_photo")):?>
 			<img src="<?php echo wp_get_attachment_image_src(get_field("row_2_photo"),"full")[0];?>" alt="<?php echo get_post(get_field("row_2_photo"))->post_title;?>">
 		<?php endif;?>

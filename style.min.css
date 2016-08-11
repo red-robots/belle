@@ -1395,9 +1395,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Arapey',serif;font-weight:normal}
 @media screen and (min-width:600px){#primary #main-sidebar{display:block;width:28%;height:100%;position:fixed;top:0;left:0;text-align:center}
 }#primary #main{width:100%;margin:0;padding:0}
 @media screen and (min-width:600px){#primary #main{width:72%;margin:0 0 0 auto}
-}#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .living-here .row-1{padding:25px;background-color:#efeeed}
-@media screen and (min-width:600px){#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .living-here .row-1{padding:7% 6% 30px 6%}
-}#primary #main .our-team .row-1 header h1,#primary #main .page-template .row-1 header h1,#primary #main .living-here .row-1 header h1{margin:0 0 20px 0;font-size:35px;color:#f89c57}
+}#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .living-here .row-1,#primary #main .the-belle-difference .row-1{padding:25px;background-color:#efeeed}
+@media screen and (min-width:600px){#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .living-here .row-1,#primary #main .the-belle-difference .row-1{padding:7% 6% 4% 6%}
+}#primary #main .our-team .row-1 header h1,#primary #main .page-template .row-1 header h1,#primary #main .living-here .row-1 header h1,#primary #main .the-belle-difference .row-1 header h1{margin:0 0 20px 0;font-size:35px;color:#f89c57}
 article{margin:0;padding:0}
 article.index .featured-image{width:100%;display:block}
 article.index .row-1{color:white;background-color:#f89c57;padding:25px 25px;margin:0}
@@ -1407,21 +1407,21 @@ article.index .row-1 header h1{margin:0;padding:0;-webkit-box-flex:0;-webkit-fle
 article.index .row-1 header:after{margin:0;padding:0;content:"";display:block;height:2px;background-color:white;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}
 @media screen and (min-width:600px){article.index .row-1 header:after{margin:10px 0 0 20px}
 }article.index .row-1 .copy{font-size:20px;margin:15px 0 0 0}
-article.index .row-2.clear-bottom{background-color:#efeeed;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
-@media screen and (min-width:1200px){article.index .row-2.clear-bottom{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
-}article.index .row-2.clear-bottom img{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%;display:block}
-@media screen and (min-width:1200px){article.index .row-2.clear-bottom img{width:55%}
-}article.index .row-2.clear-bottom .copy{line-height:1.2;width:100%;display:block;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;padding:0 25px}
-@media screen and (min-width:600px){article.index .row-2.clear-bottom .copy{padding:0 6%}
-}@media screen and (min-width:1200px){article.index .row-2.clear-bottom .copy{width:45%}
-}article.index .row-2.clear-bottom .copy header{padding-top:25px;margin:0 0 20px 0}
-@media screen and (min-width:600px){article.index .row-2.clear-bottom .copy header{padding-top:9%}
-}@media screen and (min-width:1200px){article.index .row-2.clear-bottom .copy header{padding-top:25%}
-}article.index .row-2.clear-bottom .copy header h2{font-size:28px;margin:0;color:#0047ba}
-article.index .row-2.clear-bottom .copy p{font-size:19px}
-article.index .row-2.clear-bottom .copy .link.full-article{font-size:16px;color:#0047ba;text-transform:uppercase;margin:20px 0 0 0;padding-bottom:25px}
-@media screen and (min-width:600px){article.index .row-2.clear-bottom .copy .link.full-article{padding-bottom:9%}
-}@media screen and (min-width:1200px){article.index .row-2.clear-bottom .copy .link.full-article{padding-bottom:25%}
+article.index .row-2{background-color:#efeeed;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+@media screen and (min-width:1200px){article.index .row-2{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+}article.index .row-2 img{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%;display:block}
+@media screen and (min-width:1200px){article.index .row-2 img{width:55%}
+}article.index .row-2 .copy{line-height:1.2;width:100%;display:block;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;padding:0 25px}
+@media screen and (min-width:600px){article.index .row-2 .copy{padding:0 6%}
+}@media screen and (min-width:1200px){article.index .row-2 .copy{width:45%}
+}article.index .row-2 .copy header{padding-top:25px;margin:0 0 20px 0}
+@media screen and (min-width:600px){article.index .row-2 .copy header{padding-top:9%}
+}@media screen and (min-width:1200px){article.index .row-2 .copy header{padding-top:25%}
+}article.index .row-2 .copy header h2{font-size:28px;margin:0;color:#0047ba}
+article.index .row-2 .copy p{font-size:19px}
+article.index .row-2 .copy .link.full-article{font-size:16px;color:#0047ba;text-transform:uppercase;margin:20px 0 0 0;padding-bottom:25px}
+@media screen and (min-width:600px){article.index .row-2 .copy .link.full-article{padding-bottom:9%}
+}@media screen and (min-width:1200px){article.index .row-2 .copy .link.full-article{padding-bottom:25%}
 }article.index .row-3{padding:25px 25px 25px 25px;background-color:#e6e6e6}
 @media screen and (min-width:600px){article.index .row-3{padding:7% 6%}
 }article.index .row-4{padding:25px 25px 0 25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:#efeeed}
@@ -1453,6 +1453,26 @@ article.index footer{padding:20px 25px 25px 25px;background-color:#efeeed}
 article.index footer ul:after{content:"";display:block;clear:both}
 article.index footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px;list-style-type:none;line-height:1;border-left:solid 1px #666;font-size:14px}
 article.index footer ul li:first-child{margin:0;padding:0;border:0}
+article.the-belle-difference .row-2{background-color:#efeeed;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+@media screen and (min-width:1200px){article.the-belle-difference .row-2{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;-ms-grid-row-align:stretch;align-items:stretch}
+}article.the-belle-difference .row-2 img{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%;display:block}
+@media screen and (min-width:1200px){article.the-belle-difference .row-2 img{width:60%}
+}article.the-belle-difference .row-2 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;text-align:center;padding:0}
+@media screen and (min-width:600px){article.the-belle-difference .row-2 .testimonial{width:40%;padding:0}
+}article.the-belle-difference .row-2 .testimonial .quote.wrapper{background-color:#0047ba;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
+article.the-belle-difference .row-3{padding:25px;background-color:#efeeed}
+@media screen and (min-width:600px){article.the-belle-difference .row-3{padding:4% 6% 4% 6%}
+}article.the-belle-difference .row-3 header h1{margin:0 0 20px 0;font-size:35px;color:#0047ba}
+article.the-belle-difference .row-4{padding:25px;background-color:#f89c57}
+@media screen and (min-width:600px){article.the-belle-difference .row-4{padding:6% 6% 6% 6%}
+}article.the-belle-difference .row-4 .copy p{width:77%;margin-left:auto;margin-right:auto;color:white;font-size:26px;text-align:center;font-family:'Arapey',serif;font-weight:normal}
+article.the-belle-difference footer{padding:25px 25px 25px 25px;background-color:#efeeed}
+@media screen and (min-width:600px){article.the-belle-difference footer{padding:25px 6% 25px 6%}
+}article.the-belle-difference footer ul{margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:0;text-align:right}
+article.the-belle-difference footer ul:after{content:"";display:block;clear:both}
+article.the-belle-difference footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px;list-style-type:none;line-height:1;border-left:solid 1px #666;font-size:14px}
+article.the-belle-difference footer ul li:first-child{margin:0;padding:0;border:0}
 article.our-team .relator header{background-color:#efeeed;border-top:2px solid #b9cbea;border-bottom:2px solid #b9cbea;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;color:#0047ba;padding:20px 25px}
 @media screen and (min-width:600px){article.our-team .relator header{padding:20px 6%}
 }article.our-team .relator header h2{margin:0}

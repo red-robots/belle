@@ -49,7 +49,7 @@ article {
 				margin: $size__margin-medium-small 0 0 0;
 			}
 		}
-		.row-2.clear-bottom {
+		.row-2 {
 			background-color: $color__belle-light-grey;
             display: flex;
 			justify-content: center;
@@ -282,6 +282,128 @@ article {
 	 */
 	&.living-here {
 		
+	}
+	/*
+	 * The Belle Difference template specific
+	 */
+	&.the-belle-difference {
+		.row-2 {
+			background-color: $color__belle-light-grey;
+            display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+            flex-wrap: wrap;
+            @media screen and (min-width: $deskwidth){
+				flex-wrap: nowrap;
+                align-items: stretch;
+            }
+            img {
+                flex: 0 1 auto;
+				width: 100%;
+                display: block;
+				@media screen and (min-width: $deskwidth){
+					width: $size__belle-diff-row-2-image;
+                }
+			}
+			.testimonial {
+                order: 2;
+                width: 100%;
+                flex: 0 1 auto;
+                text-align: center;
+                padding: 0;
+                @media screen and (min-width: $mobilelandscapewidth){
+                    width: 100%-$size__belle-diff-row-2-image;
+                    padding: 0;
+                }
+                .quote.wrapper {
+                    background-color: $color__belle-dark-blue;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    blockquote {
+                        color: white;
+                        flex: 0 0 auto;
+                        width: 80%;
+                        margin: 0 auto;
+                        font-weight: 500;
+                        font-size: $font__size-medium-small;
+                        line-height: 1.2;
+                    }
+                }
+            }
+		}
+		.row-3 {
+            padding: $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 4% 6% 4% 6%;
+            }
+            header {
+                h1 {
+                    margin: 0 0 $size__margin-medium 0;
+                    font-size: $font__size-extra-large;
+                    color: $color__belle-dark-blue;
+                }
+            }
+            .copy {
+            }
+        }
+		.row-4 {
+            padding: $size__margin-medium-medium-large;
+            background-color: $color__belle-orange;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 6% 6% 6% 6%;
+            }
+            .copy p {
+                width: 77%;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+                font-size: $font__size-medium-large-large-large;
+                text-align: center;
+                font-family: 'Arapey', serif;
+                font-weight: normal;
+            }
+        }
+        footer {
+            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: $size__margin-medium-medium-large 6% $size__margin-medium-medium-large 6%;
+			}
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    display: block;
+                    margin: 0 0 0 $size__margin-small;
+                    padding: 0 0 0 $size__margin-small;
+                    list-style-type: none;
+                    line-height: 1;
+                    border-left: solid 1px $color__belle-dark-grey;
+                    font-size: $font__size-small;
+                    &:first-child {
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
 	}
 	/*
 	 * Our Team template specific
