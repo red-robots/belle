@@ -1,6 +1,9 @@
 a {
 	text-decoration: none;
 	color:inherit;
+    &:hover {
+        color: $color__belle-dark-blue;
+    }
 }
 body {
 	font-size: $font__size-medium;
@@ -22,6 +25,7 @@ body {
 .copy {
     p {
         font-size: $font__size-medium-small;
+        margin: $size__margin-medium-small 0;
     }
 	p:first-child {
 		padding-top:0;
@@ -35,6 +39,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Arapey', serif;
 	font-weight: normal;
+    margin: $size__margin-medium 0;
 }
 #primary {
 	#main-sidebar {

@@ -2,7 +2,7 @@ article {
 	margin: 0;
 	padding: 0;
 	/*
-	 * Page Template specific
+	 * Index Template specific
 	 */
 	&.index {
 		.featured-image {
@@ -496,6 +496,64 @@ article {
             }
         }
 	}
+	/*
+     * Page Template Specific
+     */
+    &.page-template {
+		.row-2 {
+            padding: $size__margin-medium-medium-large;
+            background-color: $color__belle-orange;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 6% 6% 6% 6%;
+            }
+            .copy p {
+                width: 77%;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+                font-size: $font__size-medium-large-large-large;
+                text-align: center;
+                font-family: 'Arapey', serif;
+                font-weight: normal;
+            }
+        }
+        footer {
+            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: $size__margin-medium-medium-large 6% $size__margin-medium-medium-large 6%;
+			}
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    display: block;
+                    margin: 0 0 0 $size__margin-small;
+                    padding: 0 0 0 $size__margin-small;
+                    list-style-type: none;
+                    line-height: 1;
+                    border-left: solid 1px $color__belle-dark-grey;
+                    font-size: $font__size-small;
+                    &:first-child {
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
 	/*
 	 * Our Team template specific
 	 */
