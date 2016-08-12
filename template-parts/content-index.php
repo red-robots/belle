@@ -76,9 +76,11 @@
 		</section><!--.testimonial-->
 	</div><!-- .row-4 -->
 	<section class="row-5">
-		<div class="hashtag">
-			<?php if(get_field("row_5_hashtag")) echo get_field("row_5_hashtag");?>
-		</div><!--.hastag-->
+		<?php if(get_field("row_5_hashtag")):?>
+            <div class="hashtag">
+                <div class="hashtag-wrapper"><?php echo get_field("row_5_hashtag");?></div><!--.hashtag .wrapper-->
+            </div><!--.hastag-->
+		<?php endif;?>
 		<div class="instagram-feed">
 			<?php echo do_shortcode("[instagram-feed]");?>
 		</div><!--.instagram-feed-->

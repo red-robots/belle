@@ -22,3 +22,11 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin translateY($value){
+	-ms-transform: translateY($value);
+	-moz-transform: translateY($value);
+	-webkit-transform: translateY($value);
+	-o-transform: translateY($value);
+	transform: translateY($value);
+}
