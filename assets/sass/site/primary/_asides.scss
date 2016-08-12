@@ -62,7 +62,7 @@
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
 			ul {
-				margin: 0;
+				margin: 0 0 $size__margin-medium-small 0;
 				padding: 0;
 				li {
 					margin: $size__margin-medium-small 0;

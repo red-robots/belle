@@ -76,6 +76,7 @@ h3 {
 		flex-wrap: nowrap;
 		font-family: 'Arapey', serif;
         background-color:white;
+        overflow-y: scroll;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
 			width: $size__main-sidebar;
@@ -85,6 +86,9 @@ h3 {
 			left: 0;
 			text-align: center;
 		}
+		@media screen and (min-width: $mobilelandscapewidth) and (min-height: 423px){
+            overflow: hidden;
+        }
 	}
 	#main {
 		width: 100%;

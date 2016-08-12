@@ -14,9 +14,11 @@
 		<header>
 			<h1><?php the_title();?></h1>
 		</header>
-		<section class="copy">
-			<?php echo get_field("row_1_description");?>
-		</section><!--.copy-->
+		<?php if(get_field("row_1_description")):?>
+            <section class="copy">
+                <?php echo get_field("row_1_description");?>
+            </section><!--.copy-->
+        <?php endif;?>
 	</div><!-- .row-1 -->
 	<?php $args = array('post_type'=>'relator','order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>-1);
 	$query = new WP_Query($args);
@@ -42,9 +44,11 @@
                     <?php if(get_field("photo")):?>
                         <img src="<?php echo wp_get_attachment_image_src(get_field("photo"),"full")[0];?>" alt="<?php echo get_post(get_field("photo"))->post_title;?>">
                     <?php endif;?>
-                    <div class="copy">
-                        <?php if(get_field("description"))echo get_field("description");?>
-                    </div><!--.copy-->
+                    <?php if(get_field("description")):?>
+                        <div class="copy">
+                            <?php echo get_field("description");?>
+                        </div><!--.copy-->
+                    <?php endif;?>
                 </div><!--.photo-copy .wrapper-->
             </section><!--.relator-->
         <?php endwhile;?>

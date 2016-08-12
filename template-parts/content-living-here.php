@@ -14,10 +14,12 @@
 		<header>
 			<h1><?php the_title();?></h1>
 		</header>
-		<section class="copy">
-			<?php echo get_field("row_1_description");?>
-		</section><!--.copy-->
-	</div><!-- .row-1 -->
+		<?php if(get_field("row_1_description")):?>
+            <section class="copy">
+                <?php echo get_field("row_1_description");?>
+            </section><!--.copy-->
+        <?php endif;?>
+    </div><!-- .row-1 -->
 	<div class="row-2">
         <header><h2><?php if(get_field("row_2_title"))echo get_field("row_2_title");?></h2></header>
 		<?php if(have_rows("groups")):?>
@@ -35,7 +37,9 @@
                         <div class="neighborhoods copy">
                             <?php if(get_sub_field("neighborhoods")):?>
                                 <?php foreach(get_sub_field("neighborhoods") as $row):?>
-                                    <p><?php echo $row['name'];?></p>
+                                    <?php if(isset($row['name'])):?>
+                                        <p><?php echo $row['name'];?></p>
+                                    <?php endif;?>
                                 <?php endforeach;?>
                             <?php endif;?>
                         </div><!--.neighborhoods-->

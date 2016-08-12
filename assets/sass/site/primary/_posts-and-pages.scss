@@ -114,11 +114,88 @@ article {
 			}
 		}
 		.row-3 {
-            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            padding: $size__margin-medium-medium-large;
             background-color: $color__belle-medium-grey;
             @media screen and (min-width: $mobilelandscapewidth){
 				padding: 7% 6%;
 			}
+			header {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                margin: 0 0 $size__margin-small 0;
+                h2 {
+					font-size: $font__size-large;
+					margin: 0;
+					color: $color__belle-dark-blue;
+                }
+                .link.full-article {
+                    font-size: $font__size-medium-small;
+					color: $color__belle-dark-blue;
+					text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+            #idx {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: stretch;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                @media screen and (min-width: $mobilelandscapewidth){
+                    flex-wrap: nowrap;
+                }
+                .idxprop {
+                    width: 100%;
+                    background-color: white;
+                    margin: 0 0 $size__margin-medium-small 0;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        width: (100%-($size__index-feat-prop-margin*($size__index-feat-prop-span+-1)))/$size__index-feat-prop-span;
+                        margin: 0;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                    .idxphoto2{
+                        width: 100%;
+                        float: none;
+                        padding: $size__margin-small;
+                        margin: 0;
+                        img {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                    p, span {
+                        padding: 0 $size__margin-small $size__margin-tiny $size__margin-small;
+                        margin: 0;
+                        font-size: $font__size-tiny;
+                        font-weight: 500;
+                        &:last-child {
+                            padding-bottom: $size__margin-small;
+                        }
+                    }
+                    .price {
+                        font-size: $font__size-small;
+                    }
+                    .address {
+                        font-size: $font__size-small-tiny;
+                        padding-bottom: $size__margin-small;
+                    }
+                    .complex,.subdivision {
+                    }
+                    .bed-bath {
+                    }
+                    .mls-agent {
+                    }
+                }
+            }
         }
 		.row-4 {
             padding: $size__margin-medium-medium-large $size__margin-medium-medium-large 0 $size__margin-medium-medium-large;
@@ -148,6 +225,9 @@ article {
                     color: white;
                     margin: 0;
                     .fa {display: none;}
+                }
+                #cf {
+                    background-color: white;
                 }
                 .cff-page-name.cff-author-date {
                     color: $color__belle-dark-blue;
