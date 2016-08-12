@@ -213,7 +213,7 @@ article {
                 order: 1;
                 width: 100%;
                 flex: 0 1 auto;
-                padding: 0 0 $size__margin-small 0;
+                padding: 0 0 $size__margin-medium-small 0;
                 @media screen and (min-width: $mobilelandscapewidth){
                     width: 50%;
                     padding: 0 13px 0 0;
@@ -242,8 +242,8 @@ article {
                 width: 100%;
                 flex: 0 1 auto;
                 text-align: center;
-                padding: $size__margin-small 0 0 0;
-                @media screen and (min-width: $deskwidth){
+                padding: 0;
+                @media screen and (min-width: $mobilelandscapewidth){
                     width: 50%;
                     padding: 0 0 0 13px;
                 }
@@ -268,7 +268,7 @@ article {
             }
         }
         .row-5 {
-            padding: $size__margin-medium $size__margin-medium-medium-large 0 $size__margin-medium-medium-large;
+            padding: $size__margin-medium-small $size__margin-medium-medium-large 0 $size__margin-medium-medium-large;
             display: flex;
 			justify-content: center;
 			align-content: center;
