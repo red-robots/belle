@@ -226,7 +226,7 @@ article {
                     margin: 0;
                     .fa {display: none;}
                 }
-                #cf {
+                #cff {
                     background-color: white;
                 }
                 .cff-page-name.cff-author-date {
@@ -243,13 +243,14 @@ article {
                 flex: 0 1 auto;
                 text-align: center;
                 padding: $size__margin-small 0 0 0;
-                @media screen and (min-width: $mobilelandscapewidth){
+                @media screen and (min-width: $deskwidth){
                     width: 50%;
                     padding: 0 0 0 13px;
                 }
                 .quote.wrapper {
                     background-color: $color__belle-dark-blue;
                     height: 100%;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-content: center;
@@ -484,13 +485,14 @@ article {
                 flex: 0 1 auto;
                 text-align: center;
                 padding: 0;
-                @media screen and (min-width: $mobilelandscapewidth){
+                @media screen and (min-width: $deskwidth){
                     width: 100%-$size__belle-diff-row-2-image;
                     padding: 0;
                 }
                 .quote.wrapper {
                     background-color: $color__belle-dark-blue;
                     height: 100%;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-content: center;

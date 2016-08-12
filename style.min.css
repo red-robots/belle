@@ -1455,12 +1455,12 @@ article.index .row-4{padding:25px 25px 0 25px;display:-webkit-box;display:-webki
 @media screen and (min-width:600px){article.index .row-4 .facebook-feed{width:50%;padding:0 13px 0 0}
 }article.index .row-4 .facebook-feed h3{font-size:24px;background-color:#0047ba;padding:10px 30px;color:white;margin:0}
 article.index .row-4 .facebook-feed h3 .fa{display:none}
-article.index .row-4 .facebook-feed #cf{background-color:white}
+article.index .row-4 .facebook-feed #cff{background-color:white}
 article.index .row-4 .facebook-feed .cff-page-name.cff-author-date{color:#0047ba}
 article.index .row-4 .facebook-feed .cff-text{font-size:14px;color:#666}
 article.index .row-4 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;text-align:center;padding:10px 0 0 0}
-@media screen and (min-width:600px){article.index .row-4 .testimonial{width:50%;padding:0 0 0 13px}
-}article.index .row-4 .testimonial .quote.wrapper{background-color:#0047ba;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media screen and (min-width:1200px){article.index .row-4 .testimonial{width:50%;padding:0 0 0 13px}
+}article.index .row-4 .testimonial .quote.wrapper{background-color:#0047ba;height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 article.index .row-4 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
 article.index .row-5{padding:20px 25px 0 25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:#efeeed}
 @media screen and (min-width:600px){article.index .row-5{padding:20px 6% 0 6%;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
@@ -1501,8 +1501,8 @@ article.the-belle-difference .row-2{background-color:#efeeed;display:-webkit-box
 }article.the-belle-difference .row-2 img{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%;display:block}
 @media screen and (min-width:1200px){article.the-belle-difference .row-2 img{width:60%}
 }article.the-belle-difference .row-2 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;text-align:center;padding:0}
-@media screen and (min-width:600px){article.the-belle-difference .row-2 .testimonial{width:40%;padding:0}
-}article.the-belle-difference .row-2 .testimonial .quote.wrapper{background-color:#0047ba;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media screen and (min-width:1200px){article.the-belle-difference .row-2 .testimonial{width:40%;padding:0}
+}article.the-belle-difference .row-2 .testimonial .quote.wrapper{background-color:#0047ba;height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
 article.the-belle-difference .row-3{padding:25px;background-color:#efeeed}
 @media screen and (min-width:600px){article.the-belle-difference .row-3{padding:4% 6% 4% 6%}
