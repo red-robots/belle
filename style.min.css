@@ -1460,14 +1460,15 @@ article.index .row-4 .facebook-feed .cff-page-name.cff-author-date{color:#0047ba
 article.index .row-4 .facebook-feed .cff-text{font-size:14px;color:#666}
 article.index .row-4 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;text-align:center;padding:0;background-color:#0047ba;position:relative}
 @media screen and (min-width:600px){article.index .row-4 .testimonial{width:50%;padding:0 0 0 13px}
-}article.index .row-4 .testimonial .quote.wrapper{width:100%;position:absolute;top:50%;left:0;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%)}
-article.index .row-4 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
+}article.index .row-4 .testimonial .quote.wrapper{width:100%;position:static;display:block}
+@media screen and (min-width:600px){article.index .row-4 .testimonial .quote.wrapper{position:absolute;top:50%;left:0;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+}article.index .row-4 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
 article.index .row-5{padding:15px 25px 0 25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:#efeeed}
 @media screen and (min-width:600px){article.index .row-5{padding:20px 6% 0 6%;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 }article.index .row-5 .hashtag{width:100%;background-color:#f89c57;position:relative}
 @media screen and (min-width:600px){article.index .row-5 .hashtag{width:35%}
-}article.index .row-5 .hashtag .hashtag-wrapper{width:100%;text-align:center;position:absolute;top:50%;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;font-family:'Arapey',serif;font-weight:normal;font-size:28px;text-transform:lowercase;word-break:normal;color:white}
-@media screen and (min-width:600px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:14px}
+}article.index .row-5 .hashtag .hashtag-wrapper{width:100%;text-align:center;position:static;display:block;font-family:'Arapey',serif;font-weight:normal;font-size:28px;text-transform:lowercase;word-break:normal;color:white}
+@media screen and (min-width:600px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:14px;position:absolute;top:50%;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0}
 }@media screen and (min-width:700px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:18px}
 }@media screen and (min-width:900px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:24px}
 }@media screen and (min-width:1200px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:28px}
@@ -1505,8 +1506,9 @@ article.the-belle-difference .row-2{background-color:#efeeed;display:-webkit-box
 }article.the-belle-difference .row-2 .image.wrapper img{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:100%;height:auto;display:block}
 article.the-belle-difference .row-2 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;text-align:center;padding:0;position:relative;background-color:#0047ba}
 @media screen and (min-width:1200px){article.the-belle-difference .row-2 .testimonial{width:40%;padding:0}
-}article.the-belle-difference .row-2 .testimonial .quote.wrapper{width:100%;position:absolute;top:50%;left:0;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%)}
-article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
+}article.the-belle-difference .row-2 .testimonial .quote.wrapper{width:100%;display:block;position:static}
+@media screen and (min-width:1200px){article.the-belle-difference .row-2 .testimonial .quote.wrapper{position:absolute;top:50%;left:0;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+}article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;width:80%;margin:0 auto;font-weight:500;font-size:16px;line-height:1.2}
 article.the-belle-difference .row-3{padding:25px;background-color:#efeeed}
 @media screen and (min-width:600px){article.the-belle-difference .row-3{padding:4% 6% 4% 6%}
 }article.the-belle-difference .row-3 header h1{padding:0 0 20px 0;font-size:35px;color:#0047ba}
