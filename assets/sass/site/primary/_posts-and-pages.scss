@@ -489,21 +489,20 @@ article {
                 flex: 0 0 auto;
                 text-align: center;
                 padding: 0;
+                position: relative;
+                background-color: $color__belle-dark-blue;
                 @media screen and (min-width: $deskwidth){
                     width: 100%-$size__belle-diff-row-2-image;
                     padding: 0;
                 }
                 .quote.wrapper {
-                    background-color: $color__belle-dark-blue;
-                    height: 100%;
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
                     blockquote {
                         color: white;
-                        flex: 0 0 auto;
                         width: 80%;
                         margin: 0 auto;
                         font-weight: 500;
