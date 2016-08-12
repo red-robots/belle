@@ -469,11 +469,12 @@ article {
             flex-wrap: wrap;
             @media screen and (min-width: $deskwidth){
 				flex-wrap: nowrap;
-                align-items: stretch;
+                align-items: center;
             }
             img {
-                flex: 0 1 auto;
+                flex: 0 0 auto;
 				width: 100%;
+                height: auto;
                 display: block;
 				@media screen and (min-width: $deskwidth){
 					width: $size__belle-diff-row-2-image;
@@ -482,7 +483,7 @@ article {
 			.testimonial {
                 order: 2;
                 width: 100%;
-                flex: 0 1 auto;
+                flex: 0 0 auto;
                 text-align: center;
                 padding: 0;
                 @media screen and (min-width: $deskwidth){
