@@ -1525,6 +1525,9 @@ article.page-template footer{padding:25px 25px 25px 25px;background-color:#efeee
 article.page-template footer ul:after{content:"";display:block;clear:both}
 article.page-template footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px;list-style-type:none;line-height:1;border-left:solid 1px #666;font-size:14px}
 article.page-template footer ul li:first-child{margin:0;padding:0;border:0}
+article.featured-listing .row-2 .dfres-price-detail,article.featured-listing .row-2 .dfres-subhead{color:#f89c57}
+article.featured-listing .row-2 .btn-primary{background-color:#0047ba;border-color:#0047ba;color:white}
+article.featured-listing .row-2 .idximgnoborder{width:600px}
 article.sitemap .row-2 ul{margin:0;pading:0}
 article.property-search .row-2 .widget.idxqs h2{color:#0047ba;font-size:28px}
 article.property-search .row-2 .widget.idxqs form select,article.property-search .row-2 .widget.idxqs form input{margin:10px 0}

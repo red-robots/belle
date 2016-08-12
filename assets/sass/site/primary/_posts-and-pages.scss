@@ -640,6 +640,17 @@ article {
      */
     &.featured-listing {
         .row-2 {
+            .dfres-price-detail, .dfres-subhead {
+                color: $color__belle-orange;
+            }
+            .btn-primary {
+                background-color: $color__belle-dark-blue;
+                border-color: $color__belle-dark-blue;
+                color: white;
+            }
+            .idximgnoborder {
+                width: 600px;
+            }
         }
     }
     /*
