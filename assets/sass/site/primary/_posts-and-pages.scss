@@ -29,6 +29,7 @@ article {
 					margin: 0;
 					padding: 0;
 					flex: 0 1 auto;
+                    color: white;
 					font-size: $font__size-extra-extra-large;
 				}
 				&:after {
@@ -555,10 +556,57 @@ article {
         }
     }
     /*
-     * Sitemap/Property Search Specific
+     * Featured Listing Specific
      */
-    &.property-search,&.sitemap {
-		.row-3 {
+    &.featured-listing {
+        .row-2 {
+        }
+    }
+    /*
+     * Sitemap Specific
+     */
+    &.sitemap {
+        .row-2 {
+            ul {
+                margin: 0;
+                pading: 0;
+                li {
+                }
+            }
+        }
+    }
+    /*
+     * Property Search Specific
+     */
+    &.property-search {
+        .row-2 {
+            .widget.idxqs{
+                h2 {
+                    color: $color__belle-dark-blue;
+					font-size: $font__size-large;
+                }
+                form {
+                    select,input {
+                        margin: $size__margin-small 0;
+                    }
+                    input[type="checkbox"] {
+                        margin: $size__margin-tiny 0;
+                    }
+                }
+            }
+        }
+    }
+    /*
+     * Property Search/Sitemap Mutual
+     */
+    &.property-search, &.sitemap, &.featured-listing {
+		 .row-2 {
+            padding: 0 $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 0 6% 6% 6%;
+            }
+         }
+        .row-3 {
             padding: $size__margin-medium-medium-large;
             background-color: $color__belle-orange;
             @media screen and (min-width: $mobilelandscapewidth){

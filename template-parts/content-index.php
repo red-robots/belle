@@ -45,7 +45,7 @@
             </header>
         <?php endif;?>
         <div class="davis-farrell">
-			<?php echo do_shortcode('[idx mylistings="1"]');?>
+			<?php echo do_shortcode('[idx mylistings="1" n="3"]');?>
         </div><!--davis-farrell-->
 	</section><!-- .row-3 -->
 	<div class="row-4">

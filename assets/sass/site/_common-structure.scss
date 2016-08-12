@@ -49,6 +49,18 @@ h1,h2,h3,h4,h5,h6 {
 		margin-bottom: 0;
 	}
 }
+h1 {
+    font-size: $font__size-extra-large;
+    color: $color__belle-orange;
+}
+h2 {
+	font-size: $font__size-large;
+    color: $color__belle-dark-blue;
+}
+h3 {
+    font-size: $font__size-medium-large;
+    color: $color__belle-dark-blue;
+}
 #primary {
 	#main-sidebar {
 		width: 100%;
@@ -63,6 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 		align-content: center;
 		flex-wrap: nowrap;
 		font-family: 'Arapey', serif;
+        background-color:white;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
 			width: $size__main-sidebar;
@@ -81,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 			width: 100%-$size__main-sidebar;
 			margin: 0 0 0 auto;
         }
-        .our-team, .page-template, .the-belle-difference, .property-search, .sitemap {
+        .our-team, .page-template, .the-belle-difference {
             .row-1 {
                 padding: $size__margin-medium-medium-large;
                 background-color: $color__belle-light-grey;
@@ -99,7 +112,7 @@ h1,h2,h3,h4,h5,h6 {
                 }
             }
         }
-        .living-here {
+        .living-here, .property-search, .sitemap, .featured-listing {
             .row-1 {
                 padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium $size__margin-medium-medium-large;
                 background-color: $color__belle-light-grey;
