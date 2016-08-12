@@ -6,7 +6,6 @@
 		margin: $size__margin-tiny $size__margin-medium;
 		@media screen and (min-width: $mobilelandscapewidth){
 			width: 38%;
-			float: none;
 			margin: $size__margin-medium-medium-large auto $size__margin-medium-large auto;
 		}
 	}
@@ -17,6 +16,9 @@
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: none;
 		}
+		&:hover {
+            color: $color__belle-dark-blue;
+        }
 	}
 	nav.primary {
 		display: none;
@@ -80,11 +82,53 @@
 	.mobile.menu {
 		display: block;
 		position: fixed;
-		right: -100%;
+        width: 50%;
+		right: -50%;
+        height: 100%;
 		top: 0;
-		@media screen and (min-width: $mobilelandscapewidth){
+        overflow-y: scroll;
+		background-color: white;
+        text-align: center;
+        @media screen and (min-width: $mobilelandscapewidth){
 			display: none;
 		}
+		.mobile-bars {
+            text-align: left;
+            font-size: $font__size-bars;
+            margin: $size__margin-medium-small;
+            padding: 0;
+            &:hover {
+                color: $color__belle-dark-blue;
+            }
+        }
+		nav.mobile-primary {
+            display: block;	
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    margin: $size__margin-medium-small 0;
+                    list-style-type: none;
+                }
+            }
+        }
+        .mobile-social {
+            display: block;
+            ul {
+                margin: 0 0 $size__margin-medium-small 0;
+                padding: 0;
+                li {
+                    margin: $size__margin-medium-small 0;
+                    list-style-type: none;
+                    display: inline-block;
+                    margin: 0 0 0 $size__margin-small;
+                    font-size: $font__size-social;
+                    &:first-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
 	}
 }
 

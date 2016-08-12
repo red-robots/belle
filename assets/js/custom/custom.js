@@ -88,22 +88,22 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 	
-	/*
-	 * Maintain porportion for boxes labed size-d1xd2
-	 */
-	$(window).on('ready resize',function(){
-		$('[class*="size"]').each(function(){
-			console.log("class");
-			var $this = $(this);
-			$this.attr("class").split(" ").forEach(function(item){
-				var matches = item.match(/(size-)(\d)x(\d)/i);
-				console.log("item");
-				if(matches.length===4){
-					$this.css({
-						"height": Number($this.width())*matches[3]/matches[2]+"px"
-					});
-				}
-			});
+    /*-----------------------------------
+	 * Custom mobile navigation
+	 ------------------------------------*/
+	//if hamburger clicked move menu into view
+	$('#main-sidebar > .mobile.bars')
+	.on('click',function(){
+		$('#main-sidebar .mobile.menu').animate({
+			"right": 0,
+		});
+	});
+	//if hamburger clicked on menu move back out of view
+	$('#main-sidebar .mobile.menu > .mobile-bars')
+	.on('click',function(){
+		var $nav = $('#main-sidebar .mobile.menu');
+		$nav.animate({
+			"right": 100*(-1*$nav.width()/$(window).width())-2+"%"
 		});
 	});
 

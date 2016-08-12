@@ -44,6 +44,9 @@
 		<?php get_template_part("/template-parts/social");?>
 	</div>
 	<div class="mobile menu">
+        <div class="mobile-bars">
+            <i class="fa fa-bars"></i>
+        </div>
 		<nav class="mobile-primary">
 			<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
 		</nav>
