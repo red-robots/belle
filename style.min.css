@@ -1406,9 +1406,9 @@ h3{font-size:20px;color:#0047ba}
 }#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .the-belle-difference .row-1{padding:25px;background-color:#efeeed}
 @media screen and (min-width:600px){#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .the-belle-difference .row-1{padding:7% 6% 4% 6%}
 }#primary #main .our-team .row-1 header h1,#primary #main .page-template .row-1 header h1,#primary #main .the-belle-difference .row-1 header h1{margin:0 0 20px 0;font-size:35px;color:#f89c57}
-#primary #main .living-here .row-1,#primary #main .property-search .row-1,#primary #main .sitemap .row-1,#primary #main .featured-listing .row-1{padding:25px 25px 20px 25px;background-color:#efeeed}
-@media screen and (min-width:600px){#primary #main .living-here .row-1,#primary #main .property-search .row-1,#primary #main .sitemap .row-1,#primary #main .featured-listing .row-1{padding:7% 6% 20px 6%}
-}#primary #main .living-here .row-1 header h1,#primary #main .property-search .row-1 header h1,#primary #main .sitemap .row-1 header h1,#primary #main .featured-listing .row-1 header h1{margin:0 0 20px 0;font-size:35px;color:#f89c57}
+#primary #main .living-here .row-1,#primary #main .property-search .row-1,#primary #main .sitemap .row-1,#primary #main .featured-listing .row-1,#primary #main .page-404 .row-1{padding:25px 25px 20px 25px;background-color:#efeeed}
+@media screen and (min-width:600px){#primary #main .living-here .row-1,#primary #main .property-search .row-1,#primary #main .sitemap .row-1,#primary #main .featured-listing .row-1,#primary #main .page-404 .row-1{padding:7% 6% 20px 6%}
+}#primary #main .living-here .row-1 header h1,#primary #main .property-search .row-1 header h1,#primary #main .sitemap .row-1 header h1,#primary #main .featured-listing .row-1 header h1,#primary #main .page-404 .row-1 header h1{margin:0 0 20px 0;font-size:35px;color:#f89c57}
 article{margin:0;padding:0}
 article.index .featured-image{width:100%;display:block}
 article.index .row-1{color:white;background-color:#f89c57;padding:25px 25px;margin:0}
@@ -1528,10 +1528,29 @@ article.page-template footer ul li:first-child{margin:0;padding:0;border:0}
 article.featured-listing .row-2 .dfres-price-detail,article.featured-listing .row-2 .dfres-subhead{color:#f89c57}
 article.featured-listing .row-2 .btn-primary{background-color:#0047ba;border-color:#0047ba;color:white}
 article.featured-listing .row-2 .idximgnoborder{width:600px}
-article.sitemap .row-2 ul{margin:0;pading:0}
+article.featured-listing .row-2 #idx{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;margin:0;padding:0}
+@media screen and (min-width:600px){article.featured-listing .row-2 #idx{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+}article.featured-listing .row-2 #idx .idxprop{width:100%;background-color:white;margin:0 0 15px 0}
+@media screen and (min-width:600px){article.featured-listing .row-2 #idx .idxprop{width:32%;margin:0}
+}article.featured-listing .row-2 #idx .idxprop:last-child{margin:0}
+article.featured-listing .row-2 #idx .idxprop .idxphoto2{width:100%;float:none;padding:10px;margin:0}
+article.featured-listing .row-2 #idx .idxprop .idxphoto2 img{width:100%;padding:0;margin:0}
+article.featured-listing .row-2 #idx .idxprop p,article.featured-listing .row-2 #idx .idxprop span{padding:0 10px 5px 10px;margin:0;font-size:10px;font-weight:500}
+article.featured-listing .row-2 #idx .idxprop p:last-child,article.featured-listing .row-2 #idx .idxprop span:last-child{padding-bottom:10px}
+article.featured-listing .row-2 #idx .idxprop .price{font-size:14px}
+article.featured-listing .row-2 #idx .idxprop .address{font-size:12px;padding-bottom:10px}
+article.sitemap .row-2 ul,article.page-404 .row-2 ul{margin:0;pading:0}
 article.property-search .row-2 .widget.idxqs h2{color:#0047ba;font-size:28px}
 article.property-search .row-2 .widget.idxqs form select,article.property-search .row-2 .widget.idxqs form input{margin:10px 0}
 article.property-search .row-2 .widget.idxqs form input[type="checkbox"]{margin:5px 0}
+article.page-404 .row-2{padding:0 25px}
+@media screen and (min-width:600px){article.page-404 .row-2{padding:0 6%}
+}article.page-404 footer{padding:25px 25px 25px 25px;background-color:#efeeed}
+@media screen and (min-width:600px){article.page-404 footer{padding:25px 6% 25px 6%}
+}article.page-404 footer ul{margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:0;text-align:right}
+article.page-404 footer ul:after{content:"";display:block;clear:both}
+article.page-404 footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px;list-style-type:none;line-height:1;border-left:solid 1px #666;font-size:14px}
+article.page-404 footer ul li:first-child{margin:0;padding:0;border:0}
 article.property-search .row-2,article.sitemap .row-2,article.featured-listing .row-2{padding:0 25px 25px 25px}
 @media screen and (min-width:600px){article.property-search .row-2,article.sitemap .row-2,article.featured-listing .row-2{padding:0 6% 6% 6%}
 }article.property-search .row-3,article.sitemap .row-3,article.featured-listing .row-3{padding:25px;background-color:#f89c57}

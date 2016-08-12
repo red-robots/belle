@@ -651,12 +651,70 @@ article {
             .idximgnoborder {
                 width: 600px;
             }
+            #idx {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: stretch;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                @media screen and (min-width: $mobilelandscapewidth){
+                    flex-wrap: nowrap;
+                }
+                .idxprop {
+                    width: 100%;
+                    background-color: white;
+                    margin: 0 0 $size__margin-medium-small 0;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        width: (100%-($size__index-feat-prop-margin*($size__index-feat-prop-span+-1)))/$size__index-feat-prop-span;
+                        margin: 0;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                    .idxphoto2{
+                        width: 100%;
+                        float: none;
+                        padding: $size__margin-small;
+                        margin: 0;
+                        img {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                    p, span {
+                        padding: 0 $size__margin-small $size__margin-tiny $size__margin-small;
+                        margin: 0;
+                        font-size: $font__size-tiny;
+                        font-weight: 500;
+                        &:last-child {
+                            padding-bottom: $size__margin-small;
+                        }
+                    }
+                    .price {
+                        font-size: $font__size-small;
+                    }
+                    .address {
+                        font-size: $font__size-small-tiny;
+                        padding-bottom: $size__margin-small;
+                    }
+                    .complex,.subdivision {
+                    }
+                    .bed-bath {
+                    }
+                    .mls-agent {
+                    }
+                }
+            }
         }
     }
     /*
-     * Sitemap Specific
+     * Sitemap & 404 Specific
      */
-    &.sitemap {
+    &.sitemap, &.page-404 {
         .row-2 {
             ul {
                 margin: 0;
@@ -682,6 +740,53 @@ article {
                     }
                     input[type="checkbox"] {
                         margin: $size__margin-tiny 0;
+                    }
+                }
+            }
+        }
+    }
+    /*
+     * 404 page specific
+     */
+    &.page-404 {
+        .row-2 {
+            padding: 0 $size__margin-medium-medium-large;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: 0 6%;
+            }
+        }
+        footer {
+            padding: $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large $size__margin-medium-medium-large;
+            background-color: $color__belle-light-grey;
+            @media screen and (min-width: $mobilelandscapewidth){
+                padding: $size__margin-medium-medium-large 6% $size__margin-medium-medium-large 6%;
+			}
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    display: block;
+                    margin: 0 0 0 $size__margin-small;
+                    padding: 0 0 0 $size__margin-small;
+                    list-style-type: none;
+                    line-height: 1;
+                    border-left: solid 1px $color__belle-dark-grey;
+                    font-size: $font__size-small;
+                    &:first-child {
+                        margin: 0;
+                        padding: 0;
+                        border: none;
                     }
                 }
             }
