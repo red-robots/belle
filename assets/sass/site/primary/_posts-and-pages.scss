@@ -285,7 +285,6 @@ article {
                 position: relative;
                 @media screen and (min-width: $mobilelandscapewidth){
                     width: 35%;
-                    font-size: $font__size-small;
                 }
                 .hashtag-wrapper {
                     width: 100%;
@@ -300,6 +299,9 @@ article {
                     text-transform:lowercase;
                     word-break: normal;
                     color: white;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        font-size: $font__size-small;
+                    }
                     @media screen and (min-width: $tabwidth){
                         font-size: $font__size-medium;
                     }
