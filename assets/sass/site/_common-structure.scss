@@ -92,7 +92,7 @@ h3 {
 		@media screen and (min-width: $tabwidth){
             font-size: $font__size-medium-large;
         }
-        @media screen and (min-width: $mobilelandscapewidth) and (max-device-aspect-ratio: 1.5){
+        @media screen and (min-width: $mobilelandscapewidth) and (max-aspect-ratio: 1200/600){
             overflow: hidden;
         }
 	}
