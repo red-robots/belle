@@ -1400,7 +1400,6 @@ h2{font-size:28px;color:#0047ba}
 h3{font-size:20px;color:#0047ba}
 #primary #main-sidebar{width:100%;margin:0;padding:0;text-align:left;font-size:20px;line-height:1.2;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-family:'Arapey',serif;background-color:white;overflow-y:scroll}
 @media screen and (min-width:600px){#primary #main-sidebar{display:block;width:28%;height:100%;position:fixed;top:0;left:0;text-align:center}
-}@media screen and (min-width:600px) and (min-height:423px){#primary #main-sidebar{overflow:hidden}
 }#primary #main{width:100%;margin:0;padding:0}
 @media screen and (min-width:600px){#primary #main{width:72%;margin:0 0 0 auto}
 }#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .the-belle-difference .row-1{padding:25px;background-color:#efeeed}

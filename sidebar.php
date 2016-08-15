@@ -21,23 +21,24 @@
 	<div class="separator"></div>
 	<div class="info">
 		<?php if(get_field("telephone_1","option")):?>
-			<div class="telephone-1"><?php echo get_field("telephone_1","option");?></div>
+			<div class="telephone-1"><a href="tel:1-<?php echo preg_replace('/.*?(\d{3})\.(\d{3})\.(\d{4}).*/','$1-$2-$3',get_field("telephone_1","option"));?>"><?php echo get_field("telephone_1","option");?></a></div>
 		<?php endif;?>
 		<?php if(get_field("telephone_2","option")):?>
-			<div class="telephone-2"><?php echo get_field("telephone_2","option");?></div>
+			<div class="telephone-2"><a href="tel:1-<?php echo preg_replace('/.*?(\d{3})\.(\d{3})\.(\d{4}).*/','$1-$2-$3',get_field("telephone_2","option"));?>"><?php echo get_field("telephone_2","option");?></a></div>
 		<?php endif;?>
 		<?php if(get_field("telephone_3","option")):?>
-			<div class="telephone-3"><?php echo get_field("telephone_3","option");?></div>
+			<div class="telephone-3"><a href="tel:1-<?php echo preg_replace('/.*?(\d{3})\.(\d{3})\.(\d{4}).*/','$1-$2-$3',get_field("telephone_3","option"));?>"><?php echo get_field("telephone_3","option");?></a></div>
 		<?php endif;?>
 		<?php if(get_field("email","option")):?>
 			<div class="email"><?php
-				$full_email = get_field("email","option");
-				$index = strpos($full_email,'@');
+				$full_email = get_field("email","option");?>
+				<a href="mailto:<?php echo $full_email?>">
+				<?php $index = strpos($full_email,'@');
 				if($index):
 					if(substr($full_email,0,$index+1))echo "<span>".substr($full_email,0,$index+1)."</span>";
 					if(substr($full_email,$index+1))echo "<span>".substr($full_email,$index+1)."</span>";
 				endif;
-			?></div>
+			?></a></div>
 		<?php endif;?>
 	</div>
 	<div class="social">

@@ -30,12 +30,12 @@
                     <div class="info">
                         <?php if(get_field("email")):?>
                             <span class="email">
-                                <?php echo get_field("email");?>
+                                <a href="mailto:<?php echo get_field("email");?>"><?php echo get_field("email");?></a>
                             </span>
                         <?php endif;?>
                         <?php if(get_field("phone_number")):?>
                             <span class="phone-number">
-                                <?php echo get_field("phone_number");?>
+                                <a href="tel:<?php echo "1-".get_field("phone_number");?>"><?php echo get_field("phone_number");?></a>
                             </span>
                         <?php endif;?>
                     </div>
