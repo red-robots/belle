@@ -56,6 +56,11 @@
 	</section><!-- .row-3 -->
 	<div class="row-4">
 		<section class="facebook-feed">
+            <?php if(get_field("facebook_header")):?>
+                <a href="<?php echo get_field("facebook_link","option");?>" target="_blank"><header>
+                    <h2><?php echo get_field("facebook_header");?></h2>
+                </header></a>
+            <?php endif;?>
 			<?php echo do_shortcode("[custom-facebook-feed]");?>
 		</section><!--.facebook-feed-->
 		<section class="testimonial">
@@ -79,6 +84,7 @@
 		<?php if(get_field("row_5_hashtag")):?>
             <div class="hashtag">
                 <div class="hashtag-wrapper"><?php echo get_field("row_5_hashtag");?></div><!--.hashtag .wrapper-->
+                <a class="surrounding" href="<?php echo get_field("instagram_link","option");?>" target="_blank"></a>
             </div><!--.hastag-->
 		<?php endif;?>
 		<div class="instagram-feed">

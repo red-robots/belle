@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5,h6 {
 		padding-bottom:0;
 		margin-bottom: 0;
 	}
+	clear: none;
 }
 h1 {
     font-size: $font__size-extra-large;
@@ -92,7 +93,16 @@ h3 {
 		@media screen and (min-width: $tabwidth){
             font-size: $font__size-medium-large;
         }
-        @media screen and (min-width: $mobilelandscapewidth) and (max-aspect-ratio: 1200/600) and (min-height: 600px){
+        @media screen and (min-width: $mobilelandscapewidth) and (max-aspect-ratio: 717/593) and (min-height: 585px){
+            overflow: hidden;
+        }
+        @media screen and (min-width: $tabwidth) and (max-aspect-ratio: 888/600) and (min-height: 585px){
+            overflow: hidden;
+        }
+        @media screen and (min-width: $midwidth) and (max-aspect-ratio: 1132/632) and (min-height: 585px){
+            overflow: hidden;
+        }
+        @media screen and (min-width: $deskwidth) and (max-aspect-ratio: 1800/750) and (min-height: 585px){
             overflow: hidden;
         }
 	}

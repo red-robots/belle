@@ -46,8 +46,10 @@ article {
 				}
 			}
 			.copy {
-				font-size: $font__size-medium-large;
-				margin: $size__margin-medium-small 0 0 0;
+				p {
+                    font-size: $font__size-medium-medium-large-large;
+                }
+                margin: $size__margin-medium-small 0 0 0;
 			}
 		}
 		.row-2 {
@@ -69,7 +71,6 @@ article {
                 }
 			}
 			.copy {
-				line-height: 1.2;
 				width: 100%;
                 display: block;
                 flex: 0 1 auto;
@@ -218,13 +219,16 @@ article {
                     width: 50%;
                     padding: 0 13px 0 0;
                 }
-                h3 {
-                    font-size: $font__size-medium-large-large;
+                header {
                     background-color: $color__belle-dark-blue;
                     padding: $size__margin-small $size__margin-medium-large;
-                    color: white;
                     margin: 0;
-                    .fa {display: none;}
+                    h2 {
+                        font-size: $font__size-medium-large-large;
+                        color: white;
+                        margin: 0;
+                        padding: 0;
+                    }
                 }
                 #cff {
                     background-color: white;
@@ -266,7 +270,6 @@ article {
                         margin: 0 auto;
                         font-weight: 500;
                         font-size: $font__size-medium-small;
-                        line-height: 1.2;
                     }
                 }
             }
@@ -317,6 +320,14 @@ article {
                     @media screen and (min-width: $deskwidth){
                         font-size: $font__size-large;
                     }
+                }
+                .surrounding {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
                 }
             }
             .instagram-feed {
@@ -522,7 +533,6 @@ article {
                         margin: 0 auto;
                         font-weight: 500;
                         font-size: $font__size-medium-small;
-                        line-height: 1.2;
                     }
                 }
             }
@@ -885,13 +895,16 @@ article {
                 background-color: $color__belle-light-grey;
                 border-top: 2px solid $color__belle-light-blue;
                 border-bottom: 2px solid $color__belle-light-blue;
-                display: flex;
-                justify-content: space-between;
-                align-content: center;
-                align-items: center;
-                flex-wrap: wrap;
+                display: block;
                 color: $color__belle-dark-blue;
                 padding: $size__margin-medium $size__margin-medium-medium-large;
+                @media screen and (min-width: $mobileportraitwidth){
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
                 @media screen and (min-width: $mobilelandscapewidth){
                    padding: $size__margin-medium 6%;
                 }
@@ -903,13 +916,19 @@ article {
                     font-size: $font__size-medium-small;
                     font-weight: 500;
                     span {
-                        border-left: 1px solid $color__belle-dark-blue;
-                        padding: 0 0 0 $size__margin-small;
-                        margin: 0 0 0 $size__margin-small;
-                        &:first-child {
-                            border: none;
-                            padding: 0;
-                            margin: 0;
+                        margin: 0;
+                        padding: $size__margin-small 0 0 0;
+                        display: block;
+                        @media screen and (min-width: $mobileportraitwidth){
+                            display: inline-block;
+                            border-left: 1px solid $color__belle-dark-blue;
+                            padding: 0 0 0 $size__margin-small;
+                            margin: 0 0 0 $size__margin-small;
+                            &:first-child {
+                                border: none;
+                                padding: 0;
+                                margin: 0;
+                            }
                         }
                     }
                 }
@@ -917,9 +936,15 @@ article {
             .photo-copy.wrapper {
                 background-color: $color__belle-medium-grey;
                 img {
-                    margin: 0 $size__margin-medium-medium-large $size__margin-medium-medium-large 0;
-                    float: left;
-                    width: 30%;
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: $size__margin-small 0 0 0;
+                    display: block;
+                    @media screen and (min-width: $mobileportraitwidth){
+                        margin: 0 $size__margin-medium-medium-large $size__margin-medium-medium-large 0;
+                        float: left;
+                        width: 30%;
+                    }
                     @media screen and (min-width: $mobilelandscapewidth){
                         margin: 0 4% 4% 0;
                     }
