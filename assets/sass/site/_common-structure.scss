@@ -89,6 +89,12 @@ h3 {
 			left: 0;
 			text-align: center;
 		}
+        @media screen and (min-width: $mobilelandscapewidth) and (min-height: 630px){
+            overflow: hidden;
+        }
+		@media screen and (min-width: $deskwidth) and (min-height: 593px){
+            overflow: hidden;
+        }
 	}
 	#main {
 		width: 100%;
