@@ -57,7 +57,7 @@
 	<div class="row-4">
 		<section class="facebook-feed">
             <?php if(get_field("facebook_header")):?>
-                <a href="<?php echo get_field("facebook_link","option");?>" target="_blank"><header>
+                <a href="<?php echo get_field("facebook_link","option");?>" target="_blank"><header class="facebook-header">
                     <h2><?php echo get_field("facebook_header");?></h2>
                 </header></a>
             <?php endif;?>

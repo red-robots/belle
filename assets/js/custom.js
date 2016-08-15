@@ -106,5 +106,23 @@ jQuery(document).ready(function ($) {
 			"right": 100*(-1*$nav.width()/$(window).width())-2+"%"
 		});
 	});
+    /*
+     * Custom facebook feed height
+     */
+    var $facebook = $('.facebook-feed');
+    if($facebook!==undefined){
+        var $window = $(window);
+        $window.on('resize ready', function(){
+            var $testimonial = $('.testimonial .quote.wrapper');
+            var $header = $facebook.find('.facebook-header');
+            var $cff = $('#cff');
+            var scrollbar_width = window.innerWidth-$window.width();
+            if($window.width()<=600-scrollbar_width){
+                $cff.height(200);
+            } else {
+                $cff.height($testimonial.height()-$header.height()-Number($header.css('padding-bottom').replace(/[^\d]/g,""))-Number($header.css('padding-top').replace(/[^\d]/g,""))-Number($cff.css('padding-bottom').replace(/[^\d]/g,""))-Number($cff.css('padding-top').replace(/[^\d]/g,"")));
+            }
+        });
+    }
 
 });// END #####################################    END

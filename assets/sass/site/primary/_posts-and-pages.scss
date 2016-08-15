@@ -247,21 +247,27 @@ article {
                 flex: 0 1 auto;
                 text-align: center;
                 padding: 0;
-                background-color: $color__belle-dark-blue;
                 position: relative;
                 @media screen and (min-width: $mobilelandscapewidth){
                     width: 50%;
                     padding: 0 0 0 13px;
                 }
                 .quote.wrapper {
+                    background-color: $color__belle-dark-blue;
                     width: 100%;
                     position: static;
                     display: block;
-                    @media screen and (min-width: $mobilelandscapewidth){
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        @include translateY(-50%);
+                    &:before {
+                        content: url('./images/fleur-de-lis-top.png');
+                        padding: $size__margin-medium 0 $size__margin-small 0;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    &:after {
+                        content: url('./images/fleur-de-lis-bottom.png');
+                        display: block;
+                        margin: 0 auto;
+                        padding: $size__margin-small 0 $size__margin-medium 0;
                     }
                     blockquote {
                         color: white;
@@ -512,20 +518,26 @@ article {
                 text-align: center;
                 padding: 0;
                 position: relative;
-                background-color: $color__belle-dark-blue;
                 @media screen and (min-width: $deskwidth){
                     width: 100%-$size__belle-diff-row-2-image;
                     padding: 0;
                 }
                 .quote.wrapper {
+                    background-color: $color__belle-dark-blue;
                     width: 100%;
                     display: block;
                     position: static;
-                    @media screen and (min-width: $deskwidth){
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        @include translateY(-50%);
+                    &:before {
+                        content: url('./images/fleur-de-lis-top.png');
+                        padding: $size__margin-medium 0 $size__margin-small 0;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    &:after {
+                        content: url('./images/fleur-de-lis-bottom.png');
+                        display: block;
+                        margin: 0 auto;
+                        padding: $size__margin-small 0 $size__margin-medium 0;
                     }
                     blockquote {
                         color: white;
