@@ -70,7 +70,6 @@ h3 {
 		margin: 0;
 		padding: 0;
 		text-align: left;
-		font-size: $font__size-medium-large;
 		line-height: 1.2;
 		display: flex;
 		justify-content: space-between;
@@ -80,6 +79,7 @@ h3 {
 		font-family: 'Arapey', serif;
         background-color:white;
         overflow-y: scroll;
+        font-size: $font__size-medium-small;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
 			width: $size__main-sidebar;
@@ -89,6 +89,9 @@ h3 {
 			left: 0;
 			text-align: center;
 		}
+		@media screen and (min-width: $tabwidth){
+            font-size: $font__size-medium-large;
+        }
         @media screen and (min-width: $mobilelandscapewidth) and (min-height: 630px){
             overflow: hidden;
         }

@@ -89,6 +89,7 @@
         overflow-y: scroll;
 		background-color: white;
         text-align: center;
+        font-size: $font__size-medium-large;
         @media screen and (min-width: $mobilelandscapewidth){
 			display: none;
 		}
