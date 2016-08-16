@@ -1434,12 +1434,12 @@ article.index .row-2{background-color:#efeeed;display:-webkit-box;display:-webki
 }@media screen and (min-width:1200px){article.index .row-2 .copy{width:45%}
 }article.index .row-2 .copy header{padding-top:25px;margin:0 0 20px 0}
 @media screen and (min-width:600px){article.index .row-2 .copy header{padding-top:9%}
-}@media screen and (min-width:1200px){article.index .row-2 .copy header{padding-top:25%}
+}@media screen and (min-width:1200px){article.index .row-2 .copy header{padding-top:20%}
 }article.index .row-2 .copy header h2{font-size:28px;margin:0;color:#0047ba}
 article.index .row-2 .copy p{font-size:19px}
 article.index .row-2 .copy .link.full-article{font-size:16px;color:#0047ba;text-transform:uppercase;margin:20px 0 0 0;padding-bottom:25px}
 @media screen and (min-width:600px){article.index .row-2 .copy .link.full-article{padding-bottom:9%}
-}@media screen and (min-width:1200px){article.index .row-2 .copy .link.full-article{padding-bottom:25%}
+}@media screen and (min-width:1200px){article.index .row-2 .copy .link.full-article{padding-bottom:20%}
 }article.index .row-3{padding:25px;background-color:#e6e6e6}
 @media screen and (min-width:600px){article.index .row-3{padding:7% 6%}
 }article.index .row-3 header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;margin:0 0 10px 0}
@@ -1611,7 +1611,7 @@ article.our-team footer ul li:first-child{margin:0;padding:0;border:0}
 }#main-sidebar .separator{display:none}
 @media screen and (min-width:600px){#main-sidebar .separator{display:block;background-color:#b9cbea;height:2px;width:70px;margin:15px auto;padding:0}
 }#main-sidebar .info{display:none}
-@media screen and (min-width:600px){#main-sidebar .info{display:block}
+@media screen and (min-width:600px){#main-sidebar .info{display:block;font-size:18px}
 #main-sidebar .info>*{margin:15px 0}
 #main-sidebar .info .email span{display:inline-block}
 }#main-sidebar .social{display:none}

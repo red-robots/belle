@@ -61,6 +61,7 @@
 		display: none;
 		@media screen and (min-width: $mobilelandscapewidth){
 			display: block;
+            font-size: $font__size-medium;
 			> * {
 				margin: $size__margin-medium-small 0;
 			}

@@ -15,7 +15,7 @@
 			<h1><?php the_title();?></h1>
 		</header>
         <?php if(get_field("row_1_description")):?>
-            <section class="copy">
+            <section class="copy clear-bottom">
                 <?php echo get_field("row_1_description");?>
             </section><!--.copy-->
         <?php endif;?>
