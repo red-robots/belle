@@ -94,14 +94,14 @@ jQuery(document).ready(function ($) {
 	//if hamburger clicked move menu into view
 	$('#main-sidebar > .mobile.bars')
 	.on('click',function(){
-		$('#main-sidebar .mobile.menu').animate({
+		$('#mobile-menu').animate({
 			"right": 0,
 		});
 	});
 	//if hamburger clicked on menu move back out of view
-	$('#main-sidebar .mobile.menu > .mobile-bars')
+	$('#mobile-menu > .mobile-bars')
 	.on('click',function(){
-		var $nav = $('#main-sidebar .mobile.menu');
+		var $nav = $('#mobile-menu');
 		$nav.animate({
 			"right": 100*(-1*$nav.width()/$(window).width())-2+"%"
 		});

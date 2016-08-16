@@ -10,7 +10,9 @@
 
 <aside id="main-sidebar" class="left-column" role="complementary">
 	<?php if(get_field("logo","option")):?>
-		<a href="<?php echo get_bloginfo("url");?>"><img class="logo" src="<?php echo wp_get_attachment_image_src(get_field("logo","option"),"full")[0];?>" alt="<?php echo get_bloginfo("name");?> logo"></a>
+        <div class="logo wrapper">
+            <img class="logo" src="<?php echo wp_get_attachment_image_src(get_field("logo","option"),"full")[0];?>" alt="<?php echo get_bloginfo("name");?> logo"><a class="surrounding" href="<?php echo get_bloginfo("url");?>"></a>
+        </div><!--.logo.wrapper-->
 	<?php endif;?>
 	<div class="mobile bars">
 		<i class="fa fa-bars"></i>
@@ -44,15 +46,15 @@
 	<div class="social">
 		<?php get_template_part("/template-parts/social");?>
 	</div>
-	<div class="mobile menu">
-        <div class="mobile-bars">
-            <i class="fa fa-bars"></i>
-        </div>
-		<nav class="mobile-primary">
-			<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
-		</nav>
-		<div class="mobile-social">
-			<?php get_template_part("/template-parts/social");?>
-		</div>
+</aside><!-- #main-sidebar -->
+<aside id="mobile-menu">
+    <div class="mobile-bars">
+        <i class="fa fa-bars"></i>
+    </div>
+	<nav class="mobile-primary">
+		<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
+	</nav>
+	<div class="mobile-social">
+		<?php get_template_part("/template-parts/social");?>
 	</div>
-</aside><!-- #secondary -->
+</aside>
