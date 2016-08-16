@@ -100,10 +100,10 @@
 	right: -50%;
     height: 100%;
 	top: 0;
+    z-index: 1;
     overflow-y: scroll;
 	background-color: white;
     text-align: center;
-    font-size: $font__size-medium-large;
     @media screen and (min-width: $mobilelandscapewidth){
         display: none;
     }
