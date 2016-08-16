@@ -110,7 +110,7 @@ jQuery(document).ready(function ($) {
      * Custom facebook feed height
      */
     var $facebook = $('.facebook-feed');
-    if($facebook!==undefined){
+    if($facebook.length!==0){
         var $window = $(window);
         $window.on('resize ready', function(){
             var $testimonial = $('.testimonial .quote.wrapper');

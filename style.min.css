@@ -1466,9 +1466,9 @@ article.index .row-4 .facebook-feed .cff-text{font-size:14px;color:#666}
 article.index .row-4 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;text-align:center;padding:0;position:relative}
 @media screen and (min-width:600px){article.index .row-4 .testimonial{width:50%;padding:0 0 0 13px}
 }article.index .row-4 .testimonial .quote.wrapper{background-color:#0047ba;width:100%;position:static;display:block}
-article.index .row-4 .testimonial .quote.wrapper:before{content:url("./images/fleur-de-lis-top.png");padding:20px 0 10px 0;display:block;margin:0 auto}
-article.index .row-4 .testimonial .quote.wrapper:after{content:url("./images/fleur-de-lis-bottom.png");display:block;margin:0 auto;padding:10px 0 20px 0}
 article.index .row-4 .testimonial .quote.wrapper blockquote{color:white;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:80%;margin:0 auto;font-weight:500;font-size:16px}
+article.index .row-4 .testimonial .quote.wrapper blockquote:before{content:url("./images/fleur-de-lis-top.png");padding:20px 0 10px 0;display:block;margin:0 auto}
+article.index .row-4 .testimonial .quote.wrapper blockquote:after{content:url("./images/fleur-de-lis-bottom.png");display:block;margin:0 auto;padding:10px 0 20px 0}
 article.index .row-5{padding:15px 25px 0 25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:#efeeed}
 @media screen and (min-width:600px){article.index .row-5{padding:20px 6% 0 6%;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 }article.index .row-5 .hashtag{width:100%;background-color:#f89c57;position:relative}
@@ -1510,17 +1510,17 @@ article.the-belle-difference .row-2{background-color:#efeeed;display:-webkit-box
 @media screen and (min-width:1200px){article.the-belle-difference .row-2{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;-ms-grid-row-align:stretch;align-items:stretch}
 }article.the-belle-difference .row-2 .image.wrapper{width:100%}
 @media screen and (min-width:1200px){article.the-belle-difference .row-2 .image.wrapper{width:60%}
-}article.the-belle-difference .row-2 .image.wrapper img{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:100%;height:auto;display:block}
-article.the-belle-difference .row-2 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;text-align:center;padding:0;position:relative}
+}article.the-belle-difference .row-2 .image.wrapper img{width:100%;height:auto;display:block}
+article.the-belle-difference .row-2 .testimonial{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:100%;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;text-align:center;padding:0;position:relative;background-color:#0047ba}
 @media screen and (min-width:1200px){article.the-belle-difference .row-2 .testimonial{width:40%;padding:0}
-}article.the-belle-difference .row-2 .testimonial .quote.wrapper{background-color:#0047ba;width:100%;display:block;position:static}
-article.the-belle-difference .row-2 .testimonial .quote.wrapper:before{content:url("./images/fleur-de-lis-top.png");padding:20px 0 10px 0;display:block;margin:0 auto}
-article.the-belle-difference .row-2 .testimonial .quote.wrapper:after{content:url("./images/fleur-de-lis-bottom.png");display:block;margin:0 auto;padding:10px 0 20px 0}
-article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;width:80%;margin:0 auto;font-weight:500;font-size:16px}
+}@media screen and (min-width:1200px){article.the-belle-difference .row-2 .testimonial .quote.wrapper{position:absolute;top:50%;left:0;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+}article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote{color:white;width:80%;margin:0 auto;font-weight:500;font-size:16px}
+article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote:before{content:url("./images/fleur-de-lis-top.png");padding:20px 0 10px 0;display:block;margin:0 auto}
+article.the-belle-difference .row-2 .testimonial .quote.wrapper blockquote:after{content:url("./images/fleur-de-lis-bottom.png");display:block;margin:0 auto;padding:10px 0 20px 0}
 article.the-belle-difference .row-3{padding:25px;background-color:#efeeed}
 @media screen and (min-width:600px){article.the-belle-difference .row-3{padding:4% 6% 4% 6%}
 }article.the-belle-difference .row-3 header h1{padding:0 0 20px 0;font-size:35px;color:#0047ba}
-article.the-belle-difference .row-4{padding:25px;background-color:#f89c57}
+article.the-belle-difference .row-4{padding:25px;background-color:#f89c57;background-image:url("./images/fleur-de-lis.png");background-position:right center;background-repeat:no-repeat;background-size:auto 90%}
 @media screen and (min-width:600px){article.the-belle-difference .row-4{padding:6% 6% 6% 6%}
 }article.the-belle-difference .row-4 .copy p{width:77%;margin-left:auto;margin-right:auto;color:white;font-size:26px;text-align:center;font-family:'Arapey',serif;font-weight:normal}
 article.the-belle-difference footer{padding:25px 25px 25px 25px;background-color:#efeeed}
@@ -1529,7 +1529,7 @@ article.the-belle-difference footer{padding:25px 25px 25px 25px;background-color
 article.the-belle-difference footer ul:after{content:"";display:block;clear:both}
 article.the-belle-difference footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px;list-style-type:none;line-height:1;border-left:solid 1px #666;font-size:14px}
 article.the-belle-difference footer ul li:first-child{margin:0;padding:0;border:0}
-article.page-template .row-2{padding:25px;background-color:#f89c57}
+article.page-template .row-2{padding:25px;background-color:#f89c57;background-image:url("./images/fleur-de-lis.png");background-position:right center;background-repeat:no-repeat;background-size:auto 90%}
 @media screen and (min-width:600px){article.page-template .row-2{padding:6% 6% 6% 6%}
 }article.page-template .row-2 .copy p{width:77%;margin-left:auto;margin-right:auto;color:white;font-size:26px;text-align:center;font-family:'Arapey',serif;font-weight:normal}
 article.page-template footer{padding:25px 25px 25px 25px;background-color:#efeeed}
@@ -1566,7 +1566,7 @@ article.page-404 footer ul li{display:block;margin:0 0 0 10px;padding:0 0 0 10px
 article.page-404 footer ul li:first-child{margin:0;padding:0;border:0}
 article.property-search .row-2,article.sitemap .row-2,article.featured-listing .row-2{padding:0 25px 25px 25px}
 @media screen and (min-width:600px){article.property-search .row-2,article.sitemap .row-2,article.featured-listing .row-2{padding:0 6% 6% 6%}
-}article.property-search .row-3,article.sitemap .row-3,article.featured-listing .row-3{padding:25px;background-color:#f89c57}
+}article.property-search .row-3,article.sitemap .row-3,article.featured-listing .row-3{padding:25px;background-color:#f89c57;background-image:url("./images/fleur-de-lis.png");background-position:right center;background-repeat:no-repeat;background-size:auto 90%}
 @media screen and (min-width:600px){article.property-search .row-3,article.sitemap .row-3,article.featured-listing .row-3{padding:6% 6% 6% 6%}
 }article.property-search .row-3 .copy p,article.sitemap .row-3 .copy p,article.featured-listing .row-3 .copy p{width:77%;margin-left:auto;margin-right:auto;color:white;font-size:26px;text-align:center;font-family:'Arapey',serif;font-weight:normal}
 article.property-search footer,article.sitemap footer,article.featured-listing footer{padding:25px 25px 25px 25px;background-color:#efeeed}

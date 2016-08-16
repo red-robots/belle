@@ -257,18 +257,6 @@ article {
                     width: 100%;
                     position: static;
                     display: block;
-                    &:before {
-                        content: url('./images/fleur-de-lis-top.png');
-                        padding: $size__margin-medium 0 $size__margin-small 0;
-                        display: block;
-                        margin: 0 auto;
-                    }
-                    &:after {
-                        content: url('./images/fleur-de-lis-bottom.png');
-                        display: block;
-                        margin: 0 auto;
-                        padding: $size__margin-small 0 $size__margin-medium 0;
-                    }
                     blockquote {
                         color: white;
                         flex: 0 0 auto;
@@ -276,6 +264,18 @@ article {
                         margin: 0 auto;
                         font-weight: 500;
                         font-size: $font__size-medium-small;
+                        &:before {
+                            content: url('./images/fleur-de-lis-top.png');
+                            padding: $size__margin-medium 0 $size__margin-small 0;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        &:after {
+                            content: url('./images/fleur-de-lis-bottom.png');
+                            display: block;
+                            margin: 0 auto;
+                            padding: $size__margin-small 0 $size__margin-medium 0;
+                        }
                     }
                 }
             }
@@ -505,7 +505,6 @@ article {
                     width: $size__belle-diff-row-2-image;
                 }
                 img {
-                    flex: 0 0 auto;
                     width: 100%;
                     height: auto;
                     display: block;
@@ -518,26 +517,17 @@ article {
                 text-align: center;
                 padding: 0;
                 position: relative;
+                background-color: $color__belle-dark-blue;
                 @media screen and (min-width: $deskwidth){
                     width: 100%-$size__belle-diff-row-2-image;
                     padding: 0;
                 }
                 .quote.wrapper {
-                    background-color: $color__belle-dark-blue;
-                    width: 100%;
-                    display: block;
-                    position: static;
-                    &:before {
-                        content: url('./images/fleur-de-lis-top.png');
-                        padding: $size__margin-medium 0 $size__margin-small 0;
-                        display: block;
-                        margin: 0 auto;
-                    }
-                    &:after {
-                        content: url('./images/fleur-de-lis-bottom.png');
-                        display: block;
-                        margin: 0 auto;
-                        padding: $size__margin-small 0 $size__margin-medium 0;
+                    @media screen and (min-width: $deskwidth){
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        @include translateY(-50%);
                     }
                     blockquote {
                         color: white;
@@ -545,6 +535,18 @@ article {
                         margin: 0 auto;
                         font-weight: 500;
                         font-size: $font__size-medium-small;
+                        &:before {
+                            content: url('./images/fleur-de-lis-top.png');
+                            padding: $size__margin-medium 0 $size__margin-small 0;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        &:after {
+                            content: url('./images/fleur-de-lis-bottom.png');
+                            display: block;
+                            margin: 0 auto;
+                            padding: $size__margin-small 0 $size__margin-medium 0;
+                        }
                     }
                 }
             }
@@ -568,6 +570,10 @@ article {
 		.row-4 {
             padding: $size__margin-medium-medium-large;
             background-color: $color__belle-orange;
+            background-image: url('./images/fleur-de-lis.png');
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: auto 90%;
             @media screen and (min-width: $mobilelandscapewidth){
                 padding: 6% 6% 6% 6%;
             }
@@ -626,6 +632,10 @@ article {
 		.row-2 {
             padding: $size__margin-medium-medium-large;
             background-color: $color__belle-orange;
+            background-image: url('./images/fleur-de-lis.png');
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: auto 90%;
             @media screen and (min-width: $mobilelandscapewidth){
                 padding: 6% 6% 6% 6%;
             }
@@ -847,6 +857,10 @@ article {
         .row-3 {
             padding: $size__margin-medium-medium-large;
             background-color: $color__belle-orange;
+            background-image: url('./images/fleur-de-lis.png');
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: auto 90%;
             @media screen and (min-width: $mobilelandscapewidth){
                 padding: 6% 6% 6% 6%;
             }
