@@ -5869,7 +5869,7 @@ article {
             padding-top: 9%; } }
         @media screen and (min-width: 1200px) {
           article.index .row-2 .copy header {
-            padding-top: 20%; } }
+            padding-top: 18%; } }
         article.index .row-2 .copy header h2 {
           font-size: 28px;
           margin: 0;
@@ -5887,7 +5887,7 @@ article {
             padding-bottom: 9%; } }
         @media screen and (min-width: 1200px) {
           article.index .row-2 .copy .link.full-article {
-            padding-bottom: 20%; } }
+            padding-bottom: 18%; } }
   article.index .row-3 {
     padding: 25px;
     background-color: #e6e6e6; }
