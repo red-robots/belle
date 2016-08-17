@@ -1406,7 +1406,7 @@ h3{font-size:20px;color:#0047ba}
 }@media screen and (min-width:900px) and (max-aspect-ratio:1132 / 632) and (min-height:585px){#primary #main-sidebar{overflow:hidden}
 }@media screen and (min-width:1200px) and (max-aspect-ratio:1800 / 750) and (min-height:585px){#primary #main-sidebar{overflow:hidden}
 }#primary #mobile-menu{font-family:'Arapey',serif;background-color:white;overflow-y:scroll;font-size:16px}
-@media screen and (min-height:317px){#primary #mobile-menu{overflow:hidden}
+@media screen and (min-height:368px){#primary #mobile-menu{overflow:hidden}
 }#primary #main{width:100%;margin:0;padding:0}
 @media screen and (min-width:600px){#primary #main{width:72%;margin:0 0 0 auto}
 }#primary #main .our-team .row-1,#primary #main .page-template .row-1,#primary #main .the-belle-difference .row-1{padding:25px;background-color:#efeeed}

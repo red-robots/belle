@@ -111,7 +111,7 @@ h3 {
         background-color:white;
         overflow-y: scroll;
         font-size: $font__size-medium-small;
-        @media screen and (min-height: 317px){
+        @media screen and (min-height: 368px){
             overflow: hidden;
         }
     }

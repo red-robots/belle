@@ -5684,7 +5684,7 @@ h3 {
   background-color: white;
   overflow-y: scroll;
   font-size: 16px; }
-  @media screen and (min-height: 317px) {
+  @media screen and (min-height: 368px) {
     #primary #mobile-menu {
       overflow: hidden; } }
 
