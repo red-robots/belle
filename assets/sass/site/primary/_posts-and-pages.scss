@@ -339,14 +339,19 @@ article {
             .instagram-feed {
                 display: block;
                 width: 100%;
+                padding-top: $size__margin-small;
                 @media screen and (min-width: $mobilelandscapewidth){
                     width: 65%;
+                    padding-top: 0;
                 }
                 #sbi_load {
                     padding: 0 !important;
                 }
                 .sbi_photo_wrap {
-                    padding-left: $size__margin-small;
+                    padding: 0;
+                    @media screen and (min-width: $mobilelandscapewidth){
+                        padding: 0 0 0 $size__margin-small;
+                    }
                 }
             }
         }

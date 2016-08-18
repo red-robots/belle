@@ -40,6 +40,14 @@ function mytheme_favicon() {
 add_action('wp_head', 'mytheme_favicon');
 
 /*-------------------------------------
+	Font Awesome
+---------------------------------------*/
+function mytheme_fontawesome() { 
+ echo '<script src="https://use.fontawesome.com/4945cee666.js"></script>'; 
+} 
+add_action('wp_head', 'mytheme_fontawesome');
+
+/*-------------------------------------
 	Adds Options page for ACF.
 ---------------------------------------*/
 if( function_exists('acf_add_options_page') ) {acf_add_options_page();}
