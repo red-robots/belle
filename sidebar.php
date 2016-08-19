@@ -37,8 +37,10 @@
 				<a href="mailto:<?php echo $full_email?>">
 				<?php $index = strpos($full_email,'@');
 				if($index):
-					if(substr($full_email,0,$index+1))echo "<span>".substr($full_email,0,$index+1)."</span>";
-					if(substr($full_email,$index+1))echo "<span>".substr($full_email,$index+1)."</span>";
+					if(substr($full_email,0,$index+1)):echo "<span>".substr($full_email,0,$index+1)."</span>";endif;
+					if(substr($full_email,$index+1)):echo "<span>".substr($full_email,$index+1)."</span>";endif;
+                else: 
+                    echo $full_email;
 				endif;
 			?></a></div>
 		<?php endif;?>
