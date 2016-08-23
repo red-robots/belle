@@ -112,7 +112,7 @@ jQuery(document).ready(function ($) {
     var $facebook = $('.facebook-feed');
     if($facebook.length!==0){
         var $window = $(window);
-        size_facebook();
+        $window.on('load', size_facebook);
         $window.on('resize', size_facebook);
         function size_facebook(){
             var $testimonial = $('.testimonial .quote.wrapper');
