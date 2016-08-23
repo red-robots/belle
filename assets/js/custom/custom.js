@@ -112,7 +112,9 @@ jQuery(document).ready(function ($) {
     var $facebook = $('.facebook-feed');
     if($facebook.length!==0){
         var $window = $(window);
-        $window.on('resize ready', function(){
+        size_facebook();
+        $window.on('resize', size_facebook);
+        function size_facebook(){
             var $testimonial = $('.testimonial .quote.wrapper');
             var $header = $facebook.find('.facebook-header');
             var $cff = $('#cff');
@@ -122,7 +124,7 @@ jQuery(document).ready(function ($) {
             } else {
                 $cff.height($testimonial.height()-$header.height()-Number($header.css('padding-bottom').replace(/[^\d]/g,""))-Number($header.css('padding-top').replace(/[^\d]/g,""))-Number($cff.css('padding-bottom').replace(/[^\d]/g,""))-Number($cff.css('padding-top').replace(/[^\d]/g,"")));
             }
-        });
+        }
     }
 
 });// END #####################################    END
