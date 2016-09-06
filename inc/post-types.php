@@ -67,7 +67,7 @@ function js_custom_init()
     'supports' => array('title','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('relator',$args); // name used in query
+  register_post_type('realtor',$args); // name used in query
   
   // Add more between here
   

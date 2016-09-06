@@ -20,7 +20,7 @@
             </section><!--.copy-->
         <?php endif;?>
 	</div><!-- .row-1 -->
-	<?php $args = array('post_type'=>'relator','order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>-1);
+	<?php $args = array('post_type'=>'realtor','order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>-1);
 	$query = new WP_Query($args);
 	if($query->have_posts()):
 		while($query->have_posts()):$query->the_post();?>
