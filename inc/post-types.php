@@ -39,18 +39,18 @@ function js_custom_init()
   register_post_type('testimonial',$args); // name used in query
   
   $labels = array(
-	'name' => _x('Relators', 'post type general name'),
-    'singular_name' => _x('Relator', 'post type singular name'),
-    'add_new' => _x('Add New', 'Relator'),
-    'add_new_item' => __('Add New Relator'),
-    'edit_item' => __('Edit Relators'),
-    'new_item' => __('New Relator'),
-    'view_item' => __('View Relators'),
-    'search_items' => __('Search Relators'),
-    'not_found' =>  __('No Relators found'),
-    'not_found_in_trash' => __('No Relators found in Trash'), 
+	'name' => _x('Realtors', 'post type general name'),
+    'singular_name' => _x('Realtor', 'post type singular name'),
+    'add_new' => _x('Add New', 'Realtor'),
+    'add_new_item' => __('Add New Realtor'),
+    'edit_item' => __('Edit Realtors'),
+    'new_item' => __('New Realtor'),
+    'view_item' => __('View Realtors'),
+    'search_items' => __('Search Realtors'),
+    'not_found' =>  __('No Realtors found'),
+    'not_found_in_trash' => __('No Realtors found in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Relators'
+    'menu_name' => 'Realtors'
   );
   $args = array(
 	'labels' => $labels,

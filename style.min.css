@@ -829,7 +829,7 @@ article.index .row-5{padding:15px 25px 0 25px;display:-webkit-box;display:-webki
 @media screen and (min-width:600px){article.index .row-5{padding:20px 6% 0 6%;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 }article.index .row-5 .hashtag{width:100%;background-color:#f89c57;position:relative}
 @media screen and (min-width:600px){article.index .row-5 .hashtag{width:35%}
-}article.index .row-5 .hashtag .hashtag-wrapper{width:100%;text-align:center;position:static;display:block;font-family:'Arapey',serif;font-weight:normal;font-size:28px;text-transform:lowercase;word-break:normal;color:white}
+}article.index .row-5 .hashtag .hashtag-wrapper{width:100%;text-align:center;position:static;display:block;font-family:'Arapey',serif;font-weight:normal;font-size:28px;text-transform:capitalize;word-break:normal;color:white}
 @media screen and (min-width:600px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:14px;position:absolute;top:50%;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0}
 }@media screen and (min-width:700px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:18px}
 }@media screen and (min-width:900px){article.index .row-5 .hashtag .hashtag-wrapper{font-size:24px}

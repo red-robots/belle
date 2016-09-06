@@ -307,7 +307,7 @@ article {
                     font-family: 'Arapey', serif;
                     font-weight: normal;
                     font-size: $font__size-large;
-                    text-transform:lowercase;
+                    text-transform:capitalize;
                     word-break: normal;
                     color: white;
                     @media screen and (min-width: $mobilelandscapewidth){
